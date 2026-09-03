@@ -29,6 +29,15 @@
   .price .big{font-size:40px;font-weight:800;color:var(--accent);line-height:1.1}
   .price .big small{font-size:16px;font-weight:600}
   .price ul{text-align:left;display:inline-block;margin:14px 0 0;padding-left:20px;font-size:14px}
+  .plans{display:grid;gap:12px;margin-top:16px}
+  .plan{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;position:relative}
+  .plan.rec{border:2px solid var(--accent)}
+  .plan .tag{position:absolute;top:-12px;left:16px;background:var(--accent);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px}
+  .plan h3{margin:4px 0 2px;font-size:17px}
+  .plan .m{font-size:30px;font-weight:800;color:var(--accent);line-height:1.2} .plan .m small{font-size:13px;font-weight:600}
+  .plan .who{font-size:13px;color:var(--sub);margin:4px 0 10px}
+  .plan ul{margin:0;padding-left:18px;font-size:14px} .plan li{margin:3px 0} .plan li.no{color:#9aa4ae}
+  @media(min-width:640px){.plans{grid-template-columns:repeat(3,1fr)}}
   table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
   th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:#eef1f4;width:34%}
   details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-bottom:8px}
@@ -71,22 +80,59 @@
     <li><b>口コミを読んで、先に試作品を作ります</b>お客様の声から、そのお店の人柄や雰囲気（対応の早さ、説明の丁寧さ、職人気質、家族経営の温かさ）を読み取り、それに合う色・書体・言葉づかいでページを作ります。写真やロゴは勝手に使いません。</li>
     <li><b>URLを送ります。見るだけで結構です</b>電話でもDMでもはがきでもお届けします。不要なら何もしなくて大丈夫です。期限が来たら削除します。</li>
     <li><b>気に入ったら、電話番号と写真だけください</b>営業時間・対応エリア・施工写真など、本当のことに差し替えます。追加の作業はこちらでやります。</li>
-    <li><b>公開。その後の更新も込みです</b>「料金を直したい」「写真を足したい」はLINEや電話で言ってもらえれば直します。</li>
+    <li><b>公開。その後の更新もやります</b>「料金を直したい」「写真を足したい」はLINEや電話で言ってもらえれば直します（スタンダード以上は月2回まで込み）。</li>
   </ol>
 </section>
 
 <section>
   <h2>料金</h2>
   <div class="price">
-    <div class="big">初期 50,000<small>円</small>　＋　月 5,000<small>円（税込）</small></div>
+    <div class="big">初期 50,000<small>円（税込）</small></div>
     <ul>
-      <li>初期費用5万円：試作品を本物にする作業（写真・文章の差し替え、Googleマップへの登録、公開）。試作品を見て気に入ってからの契約です</li>
-      <li>月5,000円は保守費：サーバー代・文章や写真の差し替え・電話番号の変更・不具合対応、すべて込み</li>
-      <li>いつでもやめられます。やめる月まで</li>
-      <li>独自ドメイン（〇〇.com など）は希望があれば実費で追加</li>
+      <li>試作品を本物にする作業（写真・文章の差し替え、Googleマップへの登録、公開）。試作品を見て気に入ってからの契約です</li>
+      <li>先着5社はモニター価格 30,000円（公開後に感想を一言いただきます）。お支払いは公開後です</li>
     </ul>
   </div>
-  <p class="note">お支払いは銀行振込またはPayPay等（ご相談ください）。請求書を毎月お送りします。</p>
+
+  <p style="margin:22px 0 6px;font-size:15px"><b>＋ 月々の保守費（3つから選べます）</b><br><span style="font-size:13px;color:var(--sub)">保守費とは、ホームページを出し続けるための費用（サーバー・ドメイン）と、困ったときに直す人の費用を合わせたものです。</span></p>
+  <div class="plans">
+    <div class="plan">
+      <h3>ライト</h3>
+      <div class="m">月 2,000<small>円</small></div>
+      <p class="who">「まず載せておきたい」方に</p>
+      <ul>
+        <li>サーバー・ドメイン・表示の維持</li>
+        <li>不具合が出たら修正</li>
+        <li>Googleマップへの登録（初回）</li>
+        <li>内容の変更は1回3,000円（都度）</li>
+      </ul>
+    </div>
+    <div class="plan rec">
+      <span class="tag">おすすめ</span>
+      <h3>スタンダード</h3>
+      <div class="m">月 5,000<small>円</small></div>
+      <p class="who">「電話番号や写真をときどき直したい」方に</p>
+      <ul>
+        <li>ライトの内容すべて</li>
+        <li>文章・写真・営業時間の変更 月2回まで込み</li>
+        <li>Googleマップの情報も変更のたびに揃えます</li>
+        <li>年払い 50,000円（2か月分お得）</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>おまかせ集客</h3>
+      <div class="m">月 15,000<small>円</small></div>
+      <p class="who">「載せるだけでなく、お客さんを増やしたい」方に</p>
+      <ul>
+        <li>スタンダードの内容すべて（変更は回数無制限）</li>
+        <li>施工事例ページを月1件追加（写真を送るだけ）</li>
+        <li>Googleの口コミへの返信文を下書き</li>
+        <li>Instagram用の投稿画像 月4枚</li>
+        <li>年払い 150,000円（2か月分お得）</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">どのプランもいつでもやめられます（やめる月まで）。プランの変更もいつでも可。独自ドメイン（〇〇.com など）は希望があれば実費で追加。お支払いは銀行振込またはPayPay等（ご相談ください）。請求書を毎月お送りします。</p>
 </section>
 
 <section>
@@ -101,7 +147,8 @@
   <h2>よくある質問</h2>
   <details><summary>勝手に作られて、断ったらどうなりますか</summary><p>何もしなくて大丈夫です。期限が来たら削除します。お電話やDMもこちらからはしません。</p></details>
   <details><summary>写真が無いのですが</summary><p>スマホで撮った現場の写真を数枚送ってもらえれば十分です。撮り方もお伝えします。</p></details>
-  <details><summary>初期5万円と月5,000円以外にかかるお金は</summary><p>独自ドメインを希望される場合の実費（年1,000〜2,000円程度）だけです。それ以外はありません。</p></details>
+  <details><summary>初期5万円と月々の保守費以外にかかるお金は</summary><p>独自ドメインを希望される場合の実費（年1,000〜2,000円程度）と、ライトプランで内容変更を頼まれた場合の1回3,000円だけです。それ以外はありません。</p></details>
+  <details><summary>保守費は何のためのお金ですか</summary><p>ホームページを出し続けるための費用（サーバー代・ドメイン代・鍵マークの更新）と、「電話番号を直したい」「表示がおかしい」というときに直す人の費用を合わせたものです。作って終わりではなく、その後も連絡できる相手がいる、というための料金です。</p></details>
   <details><summary>Googleマップの方も直してくれますか</summary><p>はい。ホームページのURLをGoogleビジネスプロフィールに登録するところまでやります。営業時間や写真の登録もお手伝いします。</p></details>
   <details><summary>自分のお店の試作品を作ってもらえますか</summary><p>はい。InstagramのDM、メール、お電話のどれでも、お店の名前と場所を教えていただければ作ります。見てから決めていただいて結構です。</p></details>
   <details><summary>誰が作っていますか</summary><p>山口県の田中悠清が、ひとりで作っています。Emport AI は屋号です。</p></details>
@@ -124,8 +171,8 @@
   <table>
     <tr><th>販売業者</th><td>Emport AI（個人事業）　代表 田中 悠清</td></tr>
     <tr><th>所在地・電話番号</th><td>請求があれば遅滞なく開示します（電話：080-2947-0736）</td></tr>
-    <tr><th>販売価格</th><td>初期費用50,000円（税込）＋月額5,000円（税込・保守費）</td></tr>
-    <tr><th>支払時期・方法</th><td>毎月請求書を発行し、翌月末までに銀行振込等でお支払い</td></tr>
+    <tr><th>販売価格</th><td>初期費用50,000円（税込。先着5社モニターは30,000円）＋月額保守費（税込）：ライト2,000円／スタンダード5,000円／おまかせ集客15,000円。ライトの内容変更は1回3,000円。年払いはスタンダード50,000円・おまかせ集客150,000円</td></tr>
+    <tr><th>支払時期・方法</th><td>初期費用は公開後に請求書を発行。保守費は毎月（年払いの場合は年1回）請求書を発行し、翌月末までに銀行振込等でお支払い</td></tr>
     <tr><th>サービス提供時期</th><td>ご契約後、内容確定から原則7日以内に公開</td></tr>
     <tr><th>解約</th><td>いつでも可。解約月の月額までで、以降の請求はありません</td></tr>
   </table>
