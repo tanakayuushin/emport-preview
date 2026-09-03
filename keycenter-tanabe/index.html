@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:40px 20px 44px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:40px 20px 44px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:31px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,16 +27,21 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8%202a6%206%200%200%200-5.7%207.9L2%2010.2V18h3v-3h3v-3h1.1A6%206%200%201%200%208%202zm0%203a2%202%200%201%201%200%204%202%202%200%200%201%200-4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8%202a6%206%200%200%200-5.7%207.9L2%2010.2V18h3v-3h3v-3h1.1A6%206%200%201%200%208%202zm0%203a2%202%200%201%201%200%204%202%202%200%200%201%200-4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県周南市｜合鍵・鍵開け・鍵交換</div><h1>キーセンタータナベ</h1><p class="tag">よそで断られた鍵も、店舗で作ります。インキーや紛失には駆けつけます。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="8" opacity=".14" stroke-linecap="round" stroke-linejoin="round"><circle cx="330" cy="150" r="58"/><circle cx="330" cy="150" r="20"/><path d="M370 192 L500 322 M460 282 L484 258 M430 312 L454 288"/></g><g fill="none" stroke="#fff" stroke-width="3" opacity=".10"><path d="M0 330 H800 M0 300 H800"/></g></svg><div class="wrap"><div class="area">山口県周南市｜合鍵・鍵開け・鍵交換</div><h1>キーセンタータナベ</h1><p class="tag">よそで断られた鍵も、店舗で作ります。インキーや紛失には駆けつけます。</p>
 <a class="tel" href="tel:0834-31-1878">0834-31-1878<small>タップで電話がかかります（〜18:00）</small></a>
 <div class="rating">Googleの評価 4.0（クチコミ29件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true"><rect width="800" height="12" fill="var(--tile)"/></svg><main class="wrap">
+<section><h2>こんな時にご相談ください</h2><div class="cards sym"><div class="card"><b>鍵をなくした・閉め出された</b><p>まず電話を。身分証の確認をお願いしています。<span class="todo">（ご確認ください）</span></p></div><div class="card"><b>鍵を替えたい・増やしたい</b><p>交換・合鍵・防犯性の高い鍵への変更。</p></div><div class="card"><b>車・バイクの鍵</b><p>作製・開錠。<span class="todo">（ご確認ください）</span></p></div></div></section>
 <section><h2>こんなお店です</h2><div class="cards people"><div class="card"><b>職人技のご主人と、迎えてくれる奥様</b><p>折れかけた鍵から合鍵を作り、錆びた元の鍵まで綺麗にして返す。「ご主人様、奥様が神様に見えた」という口コミも。</p></div><div class="card"><b>無理と言わずに手を尽くす</b><p>ホームセンターで断られた鍵、ロッカーの鍵、取り寄せが必要な鍵も。まず「できるか」を考えてくれる店。</p></div><div class="card"><b>困った時に来てくれる</b><p>原付のインキーに駆けつけて、その場で開けて予備の鍵まで。町の鍵屋らしい身軽さ。</p></div></div></section>
 <section><h2>よくあるご相談</h2><ul class="list now"><li>合鍵作成（住宅・ロッカー・車・バイク）。できない物は取り寄せ</li><li>鍵開け（インキー・紛失・閉め出し）</li><li>鍵交換・取り付け</li><li>折れた鍵、摩耗した鍵からの複製のご相談</li></ul></section>
 <section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>お電話（鍵の種類や状況をひとことで）</li><li>店頭にお持ち込み、または駆けつけ</li><li>料金をご説明・ご了承</li><li>作業（合鍵は多くの場合その場で）</li><li>お渡し・動作確認</li></ol></section>

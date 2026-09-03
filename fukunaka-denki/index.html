@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:40px 20px 44px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:40px 20px 44px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:31px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,17 +27,22 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%202L3%2014h7l-1%208%2010-12h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%202L3%2014h7l-1%208%2010-12h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県下関市 長府商店街｜家電の修理・買い替え・取付・電気工事</div><h1>福中電器 城下町長府</h1><p class="tag">洗濯機もエアコンも、ほとんど直せます。買い替えもアフターも、長府商店街のかかりつけ電器店。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="3" opacity=".14" stroke-linecap="round"><path d="M0 300 H180 L230 250 H400"/><path d="M0 330 H120 L160 290 H300 L340 330 H800"/><path d="M800 120 H620 L580 160 H460"/><path d="M800 60 H700 L660 100 H560"/></g><g fill="#fff" opacity=".2"><circle cx="400" cy="250" r="6"/><circle cx="460" cy="160" r="6"/><circle cx="560" cy="100" r="6"/><circle cx="180" cy="300" r="6"/></g><path d="M470 180 L430 250 H465 L450 320 L510 230 H475 Z" fill="#fff" opacity=".14"/></svg><div class="wrap"><div class="area">山口県下関市 長府商店街｜家電の修理・買い替え・取付・電気工事</div><h1>福中電器 城下町長府</h1><p class="tag">洗濯機もエアコンも、ほとんど直せます。買い替えもアフターも、長府商店街のかかりつけ電器店。</p>
 <a class="tel" href="tel:083-249-5083">083-249-5083<small>タップで電話がかかります（〜18:00）</small></a>
 <a class="ig" href="https://www.instagram.com/fukunaka.denki.chofu/" target="_blank" rel="noopener">Instagramで施工例を見る（@fukunaka.denki.chofu）</a>
 <div class="rating">Googleの評価 5.0（クチコミ3件）／Instagram フォロワー880人超</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H800 V4 H0 Z" fill="var(--tile)"/><path d="M0 8 H800 V12 H0 Z" fill="var(--accent)"/></svg><main class="wrap">
+<section><h2>こんな時にご相談ください</h2><div class="cards sym"><div class="card"><b>電気がつかない・スイッチがおかしい</b><p>飛び込みでも承ります。まず電話を。</p></div><div class="card"><b>エアコン・冷蔵庫・洗濯機を替えたい</b><p>選び方から取付・古い物の引き取りまで。</p></div><div class="card"><b>ご高齢の親の家の電気が心配</b><p>ご家族からのご相談も多いです。まとめて点検します。<span class="todo">（ご確認ください）</span></p></div></div></section>
 <section><h2>こんなお店です</h2><div class="cards people"><div class="card"><b>飛び込みでも快く</b><p>マンションの天井の電気工事を飛び込みで依頼。快く引き受けて、丁寧・迅速・リーズナブル。</p></div><div class="card"><b>諦めていた取付も</b><p>ライト付き天井扇風機の取付を、お昼にもかかわらず手際よく完了。</p></div><div class="card"><b>顔が見える安心</b><p>代表が自ら対応。笑顔で作業してくれると好評。</p></div></div></section>
 <section><h2>よくあるご相談</h2><ul class="list now"><li>洗濯機・エアコン・冷蔵庫などの修理（ほとんど直せます）</li><li>家電の買い替え相談・配達・設置・古い家電の引き取り<span class="todo">（ご確認ください）</span></li><li>エアコン取付・照明・シーリングファン・コンセントなどの電気工事</li><li>ご高齢の方の家電の使い方サポート<span class="todo">（ご確認ください）</span></li><li>店舗でのお買い物・宅配にも対応</li></ul></section>
 <section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>お電話・ご来店・DMで症状をお知らせください</li><li>訪問または店頭で確認</li><li>修理か買い替えかをご説明・お見積り</li><li>作業・設置</li><li>その後の不具合もご相談ください</li></ol></section>

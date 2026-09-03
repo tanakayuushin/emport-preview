@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:40px 20px 44px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:40px 20px 44px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:31px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,17 +27,23 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%204h7v7H4zM13%204h7v7h-7zM4%2013h7v7H4zM13%2013h7v7h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%204h7v7H4zM13%204h7v7h-7zM4%2013h7v7H4zM13%2013h7v7h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%3E%3Cpath%20d%3D%22M24%204L44%2024%2024%2044%204%2024Z%22%20fill%3D%22none%22%20stroke%3D%22%239333ea%22%20stroke-opacity%3D%22.06%22%2F%3E%3C%2Fsvg%3E")}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県宇部市・山口市｜壁紙クロス・床の張り替え、穴・キズの補修</div><h1>恵インテリア</h1><p class="tag">壁紙の穴ひとつから。クロスと床の張り替え・補修を、宇部・山口で。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><pattern id="dia" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M24 4 L44 24 L24 44 L4 24 Z" fill="none" stroke="#fff" stroke-width="1.5"/></pattern></defs><rect width="800" height="360" fill="url(#dia)" opacity=".10"/><g fill="#fff" opacity=".10"><rect x="300" y="100" width="200" height="260" rx="4"/></g><g fill="none" stroke="#fff" stroke-width="3" opacity=".18"><path d="M300 100 H500 V360 H300 Z"/><path d="M400 100 V360"/></g></svg><div class="wrap"><div class="area">山口県宇部市・山口市｜壁紙クロス・床の張り替え、穴・キズの補修</div><h1>恵インテリア</h1><p class="tag">壁紙の穴ひとつから。クロスと床の張り替え・補修を、宇部・山口で。</p>
 <a class="tel" href="tel:080-6346-9147">080-6346-9147<small>タップで電話がかかります（〜20:00）</small></a>
 <a class="ig" href="https://www.instagram.com/megumi_k2025/" target="_blank" rel="noopener">Instagramで施工例を見る（@megumi_k2025）</a>
 <div class="rating">Googleの評価 5.0（クチコミ1件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 16" preserveAspectRatio="none" aria-hidden="true"><rect width="200" height="16" fill="var(--tile)"/><rect x="200" width="200" height="16" fill="var(--accent)"/><rect x="400" width="200" height="16" fill="var(--tile)" opacity=".6"/><rect x="600" width="200" height="16" fill="var(--accent)" opacity=".6"/></svg><main class="wrap">
+<section><h2>こんな時にご相談ください</h2><div class="cards sym"><div class="card"><b>壁紙に穴があいた・破れた</b><p>部分補修で目立たなく。全面張り替えの前にご相談を。</p></div><div class="card"><b>退去前に直したい</b><p>原状回復の相談。写真を送ってください。</p></div><div class="card"><b>床のキズ・へこみ</b><p>フローリングの補修。</p></div></div></section>
 
 <section><h2>よくあるご相談</h2><ul class="list now"><li>壁紙（クロス）の張り替え（1部屋から）</li><li>壁紙の穴・キズ・はがれの補修</li><li>床の張り替え・クッションフロア・シート施工</li><li>退去時・入居前の原状回復<span class="todo">（ご確認ください）</span></li><li>お見積りはDM・お電話で写真を送るだけ</li></ul></section>
 <section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>DMまたはお電話で写真を送る</li><li>概算のご案内</li><li>現地確認・正式お見積り</li><li>施工（多くは1日）</li><li>お引き渡し</li></ol></section>

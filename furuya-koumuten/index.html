@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:56px 20px 56px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:56px 20px 56px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:32px;font-weight:600;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:16px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,17 +27,22 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .tag{line-height:2} .card b{letter-spacing:.04em} .lead{font-size:15px;line-height:2.1;color:var(--sub)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2017.25V21h3.75L17.81%209.94l-3.75-3.75L3%2017.25zM20.71%207.04a1%201%200%200%200%200-1.41l-2.34-2.34a1%201%200%200%200-1.41%200l-1.83%201.83%203.75%203.75%201.83-1.83z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2017.25V21h3.75L17.81%209.94l-3.75-3.75L3%2017.25zM20.71%207.04a1%201%200%200%200%200-1.41l-2.34-2.34a1%201%200%200%200-1.41%200l-1.83%201.83%203.75%203.75%201.83-1.83z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%3E%3Cpath%20d%3D%22M40%200H0V40%22%20fill%3D%22none%22%20stroke%3D%22%231f2937%22%20stroke-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E")}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県山口市（上小鯖）｜住宅全般・古民家リフォーム・増改築・店舗改装</div><h1>古屋工務店</h1><p class="tag">住宅のことなら全般に。古民家の再生から店舗の改装まで、山口・防府・周南で施工しています。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#fff" stroke-width="1"/></pattern></defs><rect width="800" height="360" fill="url(#grid)" opacity=".10"/><g fill="none" stroke="#fff" stroke-width="3" opacity=".16"><path d="M300 360 V190 H520 V360"/><path d="M280 190 L410 90 L540 190"/><path d="M380 360 V270 H450 V360"/><rect x="470" y="225" width="36" height="32"/></g><g stroke="#fff" stroke-width="2" opacity=".14"><path d="M560 330 H780"/><path d="M560 322 V338 M620 326 V338 M680 322 V338 M740 326 V338"/></g></svg><div class="wrap"><div class="area">山口県山口市（上小鯖）｜住宅全般・古民家リフォーム・増改築・店舗改装</div><h1>古屋工務店</h1><p class="tag">住宅のことなら全般に。古民家の再生から店舗の改装まで、山口・防府・周南で施工しています。</p>
 <a class="tel" href="tel:080-5627-7608">080-5627-7608<small>タップで電話がかかります（〜18:00）</small></a>
 <a class="ig" href="https://www.instagram.com/furuya_koumuten/" target="_blank" rel="noopener">Instagramで施工例を見る（@furuya_koumuten）</a>
 <div class="rating">Googleの評価 5.0（クチコミ3件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true"><rect width="800" height="12" fill="var(--tile)"/><g stroke="#fff" stroke-width="1" opacity=".5"><path d="M0 12 V4 M40 12 V4 M80 12 V4 M120 12 V4 M160 12 V4 M200 12 V4 M240 12 V4 M280 12 V4 M320 12 V4 M360 12 V4 M400 12 V4 M440 12 V4 M480 12 V4 M520 12 V4 M560 12 V4 M600 12 V4 M640 12 V4 M680 12 V4 M720 12 V4 M760 12 V4"/></g></svg><main class="wrap">
 <section><p class="intro">住宅のことなら全般に。古民家の再生から店舗の改装まで、山口・防府・周南で施工しています。</p></section>
 <section><h2>仕事の進め方</h2><ol class="flow"><li>お電話またはDMでご相談</li><li>現地確認</li><li>お見積り（内訳つき）</li><li>ご納得いただいてから着工</li><li>完了のご報告</li></ol></section>
 <section><h2>手がけること</h2><ul class="list now"><li>住宅リフォーム全般（水まわり・内装・外まわり）</li><li>古民家リフォーム・再生</li><li>増改築・離れ・減築</li><li>店舗改装</li><li>小さな修繕<span class="todo">（建具・床・雨漏りの応急）</span><span class="todo">（ご確認ください）</span></li></ul><p class="src">Instagramのプロフィールに記載の内容をもとに作成。得意分野・施工例はご確認ください。</p></section>

@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:60px 20px 60px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:60px 20px 60px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:36px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,16 +27,20 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)}
-</style></head><body>
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
+  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)} .ba .pane{background:#1b2436}
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202l2.4%207.6L22%2012l-7.6%202.4L12%2022l-2.4-7.6L2%2012l7.6-2.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202l2.4%207.6L22%2012l-7.6%202.4L12%2022l-2.4-7.6L2%2012l7.6-2.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】現在のアメブロの代わりになる「案」を口コミから作りました。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県防府市｜タイヤ持込交換・組換・足回り・車高調・ライト交換</div><h1>タイヤガレージ ナカムラ</h1><p class="tag">持ち込みタイヤの組み換え、ハーレーでもOK。足回りもライトも「バッチリ」に仕上げる防府のガレージ。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M-100 330 L900 60 L900 90 L-100 360 Z" fill="url(#gl)"/><path d="M-100 250 L900 -20 L900 -6 L-100 264 Z" fill="url(#gl)" opacity=".6"/><g fill="none" stroke="#fff" stroke-width="5" opacity=".16" stroke-linecap="round" stroke-linejoin="round"><path d="M290 250 H580 A18 18 0 0 0 598 232 V204 L520 190 L460 130 H360 L310 190 L290 204 Z"/><circle cx="360" cy="252" r="26"/><circle cx="540" cy="252" r="26"/></g><g fill="#fff" opacity=".35"><path d="M300 100 l6 18 18 6-18 6-6 18-6-18-18-6 18-6z"/><path d="M520 70 l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></g></svg><div class="wrap"><div class="area">山口県防府市｜タイヤ持込交換・組換・足回り・車高調・ライト交換</div><h1>タイヤガレージ ナカムラ</h1><p class="tag">持ち込みタイヤの組み換え、ハーレーでもOK。足回りもライトも「バッチリ」に仕上げる防府のガレージ。</p>
 <a class="tel" href="tel:0835-57-0852">0835-57-0852<small>タップで電話がかかります</small></a>
 <div class="rating">Googleの評価 4.6（クチコミ16件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 10" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="bl" x1="0" x2="1"><stop offset="0" stop-color="var(--tile)"/><stop offset=".5" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--tile)"/></linearGradient></defs><rect width="800" height="10" fill="url(#bl)"/></svg><main class="wrap">
 <section><h2>GALLERY</h2><div class="gallery"><div>施工写真</div><div>施工写真</div><div>施工写真</div><div>ビフォー</div><div>アフター</div><div>作業中</div></div><p class="src">写真は公開時にお店からいただいた本物に差し替えます。</p></section>
 <section><h2>MENU</h2><div class="cards menu"><div class="card"><b>タイヤの持ち込み交換・組み換え</b><p>（バイク・ハーレー含む）</p></div><div class="card"><b>タイヤ販売・交換・バランス調整</b><p></p></div><div class="card"><b>車高調・サスペンション交換、足回り</b><p></p></div><div class="card"><b>ヘッドライト・フォグランプ交換、光軸調整</b><p></p></div><div class="card"><b>オイル交換・簡単な整備</b><p></p></div></div></section>
 <section><h2>仕上がりへのこだわり</h2><div class="cards people"><div class="card"><b>持ち込み組換OK</b><p>「ハーレーのタイヤ持ち込みで組み換え。なかなか受けてくれる店が無いのでありがたい」。</p></div><div class="card"><b>足回りがバッチリ</b><p>「車高調への交換、ヘッドライト・フォグ交換、光軸調整まで全てバッチリ」。</p></div><div class="card"><b>仕事が丁寧</b><p>厳しめの口コミでも「仕事は丁寧」と評価。</p></div></div></section>

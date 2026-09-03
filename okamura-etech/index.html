@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:36px 20px 40px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:36px 20px 40px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:30px;font-weight:700;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,16 +27,21 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%202L3%2014h7l-1%208%2010-12h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%202L3%2014h7l-1%208%2010-12h-7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県岩国市｜家屋・アパート・店舗の解体工事</div><h1>オカムラe-tech</h1><p class="tag">礼儀正しい若い職人が、テキパキと、ご近所に気を配って。2週間足らずで綺麗な更地に。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="3" opacity=".14" stroke-linecap="round"><path d="M0 300 H180 L230 250 H400"/><path d="M0 330 H120 L160 290 H300 L340 330 H800"/><path d="M800 120 H620 L580 160 H460"/><path d="M800 60 H700 L660 100 H560"/></g><g fill="#fff" opacity=".2"><circle cx="400" cy="250" r="6"/><circle cx="460" cy="160" r="6"/><circle cx="560" cy="100" r="6"/><circle cx="180" cy="300" r="6"/></g><path d="M470 180 L430 250 H465 L450 320 L510 230 H475 Z" fill="#fff" opacity=".14"/></svg><div class="wrap"><div class="area">山口県岩国市｜家屋・アパート・店舗の解体工事</div><h1>オカムラe-tech</h1><p class="tag">礼儀正しい若い職人が、テキパキと、ご近所に気を配って。2週間足らずで綺麗な更地に。</p>
 <a class="tel" href="tel:0827-30-8411">0827-30-8411<small>タップで電話がかかります</small></a>
 <div class="rating">Googleの評価 5.0（クチコミ4件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H800 V4 H0 Z" fill="var(--tile)"/><path d="M0 8 H800 V12 H0 Z" fill="var(--accent)"/></svg><main class="wrap">
+<section><h2>こんな時にご相談ください</h2><div class="cards sym"><div class="card"><b>エアコンの調子が悪い・取り替えたい</b><p>修理か交換か、見てから提案します。</p></div><div class="card"><b>コンセントを増やしたい・照明を替えたい</b><p>増設・交換などの電気工事。</p></div><div class="card"><b>ブレーカーがよく落ちる</b><p>原因を調べます。放置は危険です。</p></div></div></section>
 <section><h2>安心してご依頼いただくために</h2><div class="cards "><div class="card"><b>許可を持つ会社です</b><p>解体工事の許可番号<span class="todo">（ご確認ください）</span>を明記します。</p></div><div class="card"><b>ご近所へのあいさつ</b><p>着工前にご近所へあいさつし、騒音・粉じん・車両に配慮します。</p></div><div class="card"><b>見積りは内訳を出します</b><p>解体・処分・整地を分けてお伝えします。追加が出る時は先にご説明します。</p></div></div></section>
 <section><h2>できること</h2><ul class="list now"><li>木造住宅・アパート・店舗の解体</li><li>内装解体・部分解体</li><li>ブロック塀・倉庫・カーポートの撤去</li><li>解体後の整地・更地渡し</li><li>空き家の解体のご相談（補助金は「対象になる場合があります」止まり）</li></ul></section>
 <section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話で場所と建物の概要を</li><li>現地調査</li><li>お見積り（内訳つき）</li><li>ご近所あいさつ・着工</li><li>更地の確認・お引き渡し</li></ol></section>

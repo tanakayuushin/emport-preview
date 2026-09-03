@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:36px 20px 40px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:36px 20px 40px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:30px;font-weight:700;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,17 +27,22 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2021V11l4-3%204%203v10h-3v-6H6v6zM13%2021V9l4-3%204%203v12h-3v-7h-2v7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2021V11l4-3%204%203v10h-3v-6H6v6zM13%2021V9l4-3%204%203v12h-3v-7h-2v7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%3E%3Cpath%20d%3D%22M40%200H0V40%22%20fill%3D%22none%22%20stroke%3D%22%231f2937%22%20stroke-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E")}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県宇部市｜浴室・トイレ・キッチンのリフォーム、外構・フェンス・駐車場・庭づくり</div><h1>キヨクニ</h1><p class="tag">家の中も外も、ひとつの窓口で。水まわりのリフォームから外構・庭づくりまで宇部で。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g stroke="#fff" opacity=".12" stroke-width="2"><path d="M0 300 H800 M0 330 H800"/><path d="M40 360 V240 M120 360 V240 M200 360 V240 M280 360 V240 M360 360 V240 M440 360 V240 M520 360 V240 M600 360 V240 M680 360 V240 M760 360 V240"/></g><rect x="0" y="236" width="800" height="8" fill="#fff" opacity=".14"/><g opacity=".08" stroke="#fff" stroke-width="1"><path d="M0 60 H800 M0 120 H800 M0 180 H800 M100 0 V220 M300 0 V220 M500 0 V220 M700 0 V220"/></g><g transform="translate(520 220) rotate(215) scale(0.5)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(290 222) rotate(-35) scale(0.5)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g></svg><div class="wrap"><div class="area">山口県宇部市｜浴室・トイレ・キッチンのリフォーム、外構・フェンス・駐車場・庭づくり</div><h1>キヨクニ</h1><p class="tag">家の中も外も、ひとつの窓口で。水まわりのリフォームから外構・庭づくりまで宇部で。</p>
 <a class="tel" href="tel:080-5623-5821">080-5623-5821<small>タップで電話がかかります（〜19:00）</small></a>
 <a class="ig" href="https://www.instagram.com/kiyokuni9215/" target="_blank" rel="noopener">Instagramで施工例を見る（@kiyokuni9215）</a>
 <div class="rating">Googleビジネスプロフィールを自社で更新中（口コミはこれから）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 14" preserveAspectRatio="none" aria-hidden="true"><rect width="800" height="6" fill="var(--tile)"/><rect y="9" width="800" height="3" fill="var(--tile)" opacity=".5"/></svg><main class="wrap">
 <section><h2>安心してご依頼いただくために</h2><div class="cards "><div class="card"><b>見積りは内訳を出します</b><p>何にいくらかかるかを説明してから着工します。</p></div><div class="card"><b>突然の訪問営業はしません</b><p>ご連絡をいただいてからお伺いします。</p></div><div class="card"><b>施工例はInstagramで</b><p>現場の写真を見てからご相談いただけます。</p></div></div><p class="src">※訪問販売によるリフォーム工事のトラブルは全国で多く報告されています（国民生活センター）。上の3つは公開情報から作った「約束の案」です。</p></section>
 <section><h2>できること</h2><ul class="list now"><li>浴室・トイレ・キッチンのリフォーム</li><li>外構・フェンス・駐車場</li><li>庭づくり・お庭のリフォーム</li><li>内と外をまとめて相談できるので、工程と費用が一本化<span class="todo">（ご確認ください）</span></li></ul></section>
 <section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話またはDMでご相談</li><li>現地確認</li><li>お見積り（内訳つき）</li><li>工事</li><li>完了のご報告</li></ol></section>

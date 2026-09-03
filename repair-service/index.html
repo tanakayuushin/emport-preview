@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:40px 20px 44px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:40px 20px 44px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:31px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,16 +27,20 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22.7%2019l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9%206%206%209%201.6%204.7C.4%207.1.9%2010.1%202.9%2012.1c1.9%201.9%204.6%202.4%206.9%201.5l9.1%209.1c.4.4%201%20.4%201.4%200l2.3-2.3c.5-.4.5-1.1.1-1.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22.7%2019l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9%206%206%209%201.6%204.7C.4%207.1.9%2010.1%202.9%2012.1c1.9%201.9%204.6%202.4%206.9%201.5l9.1%209.1c.4.4%201%20.4%201.4%200l2.3-2.3c.5-.4.5-1.1.1-1.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県下松市 瑞穂町（下松駅北口 徒歩3分）｜靴修理・かばん修理・革製品の修理</div><h1>靴・バッグの病院 リペアサービス</h1><p class="tag">「今日中に直したい」に応える。かかとのゴム890円から、明朗会計で。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="3" opacity=".14" stroke-dasharray="10 8" stroke-linecap="round"><path d="M0 310 H800 M0 340 H800"/></g><g fill="none" stroke="#fff" stroke-width="6" opacity=".14"><circle cx="460" cy="170" r="60"/><circle cx="460" cy="170" r="22"/><path d="M460 90 V110 M460 230 V250 M380 170 H400 M520 170 H540 M404 114 L418 128 M502 212 L516 226 M516 114 L502 128 M418 212 L404 226"/></g></svg><div class="wrap"><div class="area">山口県下松市 瑞穂町（下松駅北口 徒歩3分）｜靴修理・かばん修理・革製品の修理</div><h1>靴・バッグの病院 リペアサービス</h1><p class="tag">「今日中に直したい」に応える。かかとのゴム890円から、明朗会計で。</p>
 <a class="tel" href="tel:0833-43-9666">0833-43-9666<small>タップで電話がかかります</small></a>
 <div class="rating">Googleの評価 4.4（クチコミ11件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 12" preserveAspectRatio="none" aria-hidden="true"><rect width="800" height="12" fill="var(--tile)"/><path d="M0 6 H800" stroke="#fff" stroke-width="2" stroke-dasharray="14 10" opacity=".6"/></svg><main class="wrap">
 <section><h2>こんなお店です</h2><div class="cards people"><div class="card"><b>その日に直る</b><p>「どうしても今日中に、で探して辿り着いた」「ブーツのヒールを当日修理」。</p></div><div class="card"><b>安くて明朗会計</b><p>「かかとのゴムが890円で直って大感激」「2千円でお釣り」「明朗会計」。</p></div><div class="card"><b>物腰が柔らかい</b><p>「受付の方も職人さんも物腰柔らか」「店主さんが丁寧」。</p></div></div></section>
 <section><h2>よくあるご相談</h2><ul class="list now"><li>靴のかかと・ソール交換、ヒール修理</li><li>かばん・財布・革製品の修理（持ち手・ファスナー・ほつれ）</li><li>下駄・履物の修理</li><li>革のクリーニング・色補修<span class="todo">（ご確認ください）</span></li><li>「買い直すか直すか」の相談だけでも</li></ul></section>
 <section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>お持ち込み（電話で事前相談も可）</li><li>状態を見て料金と日数をご案内</li><li>修理（軽い物は当日）</li><li>お渡し</li></ol></section>

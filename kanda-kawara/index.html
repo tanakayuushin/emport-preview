@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:56px 20px 56px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:56px 20px 56px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:32px;font-weight:600;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:16px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,16 +27,21 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   .tag{line-height:2} .card b{letter-spacing:.04em} .lead{font-size:15px;line-height:2.1;color:var(--sub)}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%203L2%2012h3v8h14v-8h3z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%203L2%2012h3v8h14v-8h3z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県防府市｜瓦・屋根の修理</div><h1>神田瓦店</h1><p class="tag">屋根のこと、分からないことも不安なことも、気軽に相談できる地元の瓦屋です。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><pattern id="tile" width="44" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 A22 22 0 0 1 44 26" fill="none" stroke="#fff" stroke-width="2"/><path d="M-22 13 A22 22 0 0 1 22 13 M22 13 A22 22 0 0 1 66 13" fill="none" stroke="#fff" stroke-width="2"/></pattern></defs><path d="M120 360 L400 150 L680 360" fill="none" stroke="#fff" stroke-width="8" opacity=".16" stroke-linejoin="round"/><path d="M120 360 L400 150 L680 360 Z" fill="url(#tile)" opacity=".13"/><rect x="0" y="300" width="800" height="60" fill="url(#tile)" opacity=".06"/></svg><div class="wrap"><div class="area">山口県防府市｜瓦・屋根の修理</div><h1>神田瓦店</h1><p class="tag">屋根のこと、分からないことも不安なことも、気軽に相談できる地元の瓦屋です。</p>
 <a class="tel" href="tel:0835-21-1396">0835-21-1396<small>タップで電話がかかります</small></a>
 <div class="rating">Googleの評価 4.7（クチコミ9件）</div>
-</div></header><main class="wrap">
+</div></header><svg class="band" viewBox="0 0 800 20" preserveAspectRatio="none" aria-hidden="true"><defs><pattern id="tb" width="40" height="20" patternUnits="userSpaceOnUse"><path d="M0 20 A20 20 0 0 1 40 20 Z" fill="var(--tile)"/></pattern></defs><rect width="800" height="20" fill="url(#tb)"/></svg><main class="wrap">
+<section><h2>こんな時にご相談ください</h2><div class="cards sym"><div class="card"><b>雨漏りがする・天井にシミ</b><p>まず応急処置、その後に原因を調べます。写真つきでご説明します。</p></div><div class="card"><b>瓦がずれた・落ちた</b><p>台風・地震の後は要注意。部分的な差し替えで済むことも多いです。</p></div><div class="card"><b>雨樋が外れた・詰まった</b><p>雨樋の修理・交換・掃除。</p></div><div class="card"><b>訪問業者に「屋根が危ない」と言われた</b><p>その場で契約せず、別の目で確認を。点検結果は書面でお渡しします。<span class="todo">（ご確認ください）</span></p></div></div></section>
 <section><p class="intro">屋根のこと、分からないことも不安なことも、気軽に相談できる地元の瓦屋です。</p></section>
 <section><h2>仕事の進め方</h2><ol class="flow"><li>お電話でご相談（状況をひとことで大丈夫です）</li><li>現地で屋根の状態を確認</li><li>お見積り（内訳つき）をご説明</li><li>ご納得いただいてから工事</li><li>工事後にご報告</li></ol></section>
 <section><h2>こんな時にご相談ください</h2><ul class="list now"><li>台風や強風のあと、瓦がずれた・落ちた気がする</li><li>天井にしみがある、雨の日にぽたぽた音がする（雨漏り）</li><li>棟（屋根のてっぺん）の漆喰がはがれてきた</li><li>古い瓦屋根の葺き替え・部分的な差し替え</li><li>「点検した方がいいのか分からない」という段階でも大丈夫です</li></ul></section>
