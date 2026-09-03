@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:60px 20px 60px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:60px 20px 60px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:36px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,18 +27,23 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)}
-</style></head><body>
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
+  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)} .ba .pane{background:#1b2436}
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202l2.4%207.6L22%2012l-7.6%202.4L12%2022l-2.4-7.6L2%2012l7.6-2.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202l2.4%207.6L22%2012l-7.6%202.4L12%2022l-2.4-7.6L2%2012l7.6-2.4z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県防府市｜研磨・コーティング・PPF・ヘッドライトフィルム</div><h1>Grounded Auto Detailing</h1><p class="tag">ボディの状態を見ながら磨いて、コーティングする。ディーラーより安く、毎年新車みたいに。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><path d="M-100 330 L900 60 L900 90 L-100 360 Z" fill="url(#gl)"/><path d="M-100 250 L900 -20 L900 -6 L-100 264 Z" fill="url(#gl)" opacity=".6"/><g fill="none" stroke="#fff" stroke-width="5" opacity=".16" stroke-linecap="round" stroke-linejoin="round"><path d="M470 250 H760 A18 18 0 0 0 778 232 V204 L700 190 L640 130 H540 L490 190 L470 204 Z"/><circle cx="540" cy="252" r="26"/><circle cx="720" cy="252" r="26"/></g><g fill="#fff" opacity=".35"><path d="M120 90 l6 18 18 6-18 6-6 18-6-18-18-6 18-6z"/><path d="M700 60 l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/></g></svg><div class="wrap"><div class="area">山口県防府市｜研磨・コーティング・PPF・ヘッドライトフィルム</div><h1>Grounded Auto Detailing</h1><p class="tag">ボディの状態を見ながら磨いて、コーティングする。ディーラーより安く、毎年新車みたいに。</p>
 <a class="tel" href="tel:080-9791-1581">080-9791-1581<small>タップで電話がかかります（〜19:00）</small></a>
 <a class="ig" href="https://www.instagram.com/grounded_ad/" target="_blank" rel="noopener">Instagramで施工例を見る（@grounded_ad）</a>
 <div class="rating">Googleの評価 5.0（クチコミ23件）／Instagram フォロワー1,800人超</div>
-</div></header><main class="wrap">
-<section><h2>GALLERY</h2><div class="gallery"><div>施工写真</div><div>施工写真</div><div>施工写真</div><div>ビフォー</div><div>アフター</div><div>作業中</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+</div></header><svg class="band" viewBox="0 0 800 10" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="bl" x1="0" x2="1"><stop offset="0" stop-color="var(--tile)"/><stop offset=".5" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--tile)"/></linearGradient></defs><rect width="800" height="10" fill="url(#bl)"/></svg><main class="wrap">
+<section><h2>GALLERY</h2><div class="gallery"><div>研磨前</div><div>研磨後</div><div>コーティング後の映り込み</div><div>PPF施工</div><div>ヘッドライト前後</div><div>作業風景</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+<section><h2>施工前・施工後（写真枠）</h2><p class="ba-title">ボディ全体</p><div class="ba"><div class="pane"><i>BEFORE</i>洗車キズ・水シミ・くすみ</div><div class="pane"><i>AFTER</i>2度磨き＋コーティングで、映り込みがくっきり</div></div><p class="ba-title">ヘッドライト</p><div class="ba"><div class="pane"><i>BEFORE</i>黄ばみ・虹模様</div><div class="pane"><i>AFTER</i>フィルム施工で透明感が戻る</div></div><p class="ba-title">新車・新古車</p><div class="ba"><div class="pane"><i>BEFORE</i>納車直後の細かなキズが心配</div><div class="pane"><i>AFTER</i>PPFで飛び石・キズを予防</div></div><p class="src">写真は公開時に、お店で撮った本物の施工前後に差し替えます。</p></section>
 <section><h2>MENU</h2><div class="cards menu"><div class="card"><b>ボディ研磨</b><p>（2度磨き）＋コーティング（エシュロン等）</p></div><div class="card"><b>PPF</b><p>（ペイントプロテクションフィルム）</p></div><div class="card"><b>ヘッドライトの黄ばみ・虹模様のフィルム施工</b><p></p></div><div class="card"><b>新車・新古車の納車前コーティング</b><p></p></div><div class="card"><b>小さなキズ・ぶつけた時のご相談</b><p>（板金塗装は提携先と連携）</p></div><div class="card"><b>数年後のメンテナンスは割安に</b><p><span class="todo">（ご確認ください）</span></p></div></div></section>
 <section><h2>仕上がりへのこだわり</h2><div class="cards people"><div class="card"><b>仕上がりが違う</b><p>磨き傷なし、艶と撥水も申し分なし。毎年お願いして毎回新車のようにピカピカ。</p></div><div class="card"><b>ディーラーより安い</b><p>以前高額なコーティングが半年でシミだらけに。ここは価格も質も納得という声。</p></div><div class="card"><b>クルマ愛が伝わる対応</b><p>オーナーが親切で話しやすく、相談にも乗ってくれる。別店で1か月と言われた作業もすぐ対応。</p></div></div></section>
 <section><h2>FLOW</h2><ol class="flow"><li>お電話またはInstagramのDMで車種と気になる点を</li><li>ご来店・状態の確認とお見積り</li><li>施工（日数は内容により）</li><li>お引き渡し・お手入れのご説明</li><li>翌年以降のメンテナンスのご案内</li></ol></section>

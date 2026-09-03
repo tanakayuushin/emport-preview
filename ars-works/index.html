@@ -6,7 +6,9 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:60px 20px 60px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:60px 20px 60px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:36px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,18 +27,23 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)}
-</style></head><body>
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
+  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)} .ba .pane{background:#1b2436}
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2021V11l4-3%204%203v10h-3v-6H6v6zM13%2021V9l4-3%204%203v12h-3v-7h-2v7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2021V11l4-3%204%203v10h-3v-6H6v6zM13%2021V9l4-3%204%203v12h-3v-7h-2v7z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県山口市｜新築外構・外構リフォーム・カーポート・フェンス・ウッドデッキ</div><h1>ARS WORKS アルスワークス</h1><p class="tag">限られた予算の中で、カッコよくこだわる。職人出身の代表が設計から施工まで。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g stroke="#fff" opacity=".10" stroke-width="2"><path d="M0 300 H800 M0 330 H800"/><path d="M40 360 V240 M120 360 V240 M200 360 V240 M280 360 V240 M360 360 V240 M440 360 V240 M520 360 V240 M600 360 V240 M680 360 V240 M760 360 V240"/></g><rect x="0" y="236" width="800" height="8" fill="#fff" opacity=".12"/><g opacity=".08" stroke="#fff" stroke-width="1"><path d="M0 60 H800 M0 120 H800 M0 180 H800 M100 0 V220 M300 0 V220 M500 0 V220 M700 0 V220"/></g><g transform="translate(720 210) rotate(215) scale(0.5)" opacity=".10"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(60 220) rotate(-35) scale(0.5)" opacity=".10"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g></svg><div class="wrap"><div class="area">山口県山口市｜新築外構・外構リフォーム・カーポート・フェンス・ウッドデッキ</div><h1>ARS WORKS アルスワークス</h1><p class="tag">限られた予算の中で、カッコよくこだわる。職人出身の代表が設計から施工まで。</p>
 <a class="tel" href="tel:083-976-6582">083-976-6582<small>タップで電話がかかります（〜17:00）</small></a>
 <a class="ig" href="https://www.instagram.com/ars.works_exterior.garden/" target="_blank" rel="noopener">Instagramで施工例を見る（@ars.works_exterior.garden）</a>
 <div class="rating">Googleの評価 5.0（クチコミ7件）</div>
-</div></header><main class="wrap">
-<section><h2>GALLERY</h2><div class="gallery"><div>施工写真</div><div>施工写真</div><div>施工写真</div><div>ビフォー</div><div>アフター</div><div>作業中</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+</div></header><svg class="band" viewBox="0 0 800 14" preserveAspectRatio="none" aria-hidden="true"><rect width="800" height="6" fill="var(--tile)"/><rect y="9" width="800" height="3" fill="var(--tile)" opacity=".5"/></svg><main class="wrap">
+<section><h2>こんなご相談から始まります</h2><div class="cards sym"><div class="card"><b>駐車場をもう1台分増やしたい</b><p>土間コンクリート・カーポート。敷地を見て配置を提案します。</p></div><div class="card"><b>雑草をなんとかしたい</b><p>防草シート＋砂利敷き・犬走。手入れの手間を減らします。</p></div><div class="card"><b>隣や道路からの視線が気になる</b><p>目隠しフェンス・植栽。高さと素材で印象が変わります。</p></div><div class="card"><b>庭でくつろぐ場所がほしい</b><p>ウッドデッキ・テラス囲い。予算を先に聞いて、その中でカッコよく。</p></div></div></section>
+<section><h2>GALLERY</h2><div class="gallery"><div>駐車場・アプローチ</div><div>門まわり</div><div>目隠しフェンス</div><div>ウッドデッキ</div><div>砂利敷き・犬走</div><div>店舗エクステリア</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
 <section><h2>MENU</h2><div class="cards menu"><div class="card"><b>新築外構</b><p>（駐車場・アプローチ・フェンス・門まわり）</p></div><div class="card"><b>外構リフォーム</b><p>（犬走・砂利敷き・カーポート・テラス囲い）</p></div><div class="card"><b>ウッドデッキ・お庭づくり</b><p></p></div><div class="card"><b>店舗・賃貸住宅のエクステリア</b><p></p></div><div class="card"><b>設計から施工管理まで一貫</b><p>（職人出身・2023年1月独立）</p></div></div></section>
 <section><h2>仕上がりへのこだわり</h2><div class="cards people"><div class="card"><b>分からなくても大丈夫</b><p>外構の知識ゼロの夫婦にも、打ち合わせから丁寧に説明。納得して契約できた。</p></div><div class="card"><b>予算内でカッコよく</b><p>舗装とフェンスだけのつもりが「限られた予算でこだわりましょう」と背中を押され、意気投合。</p></div><div class="card"><b>要望に臨機応変</b><p>連絡ミスのイレギュラーにも柔軟に対応。夏休み前に間に合わせてくれた。</p></div></div></section>
 <section><h2>FLOW</h2><ol class="flow"><li>お電話またはDMでご相談</li><li>現地確認・ヒアリング</li><li>プランとお見積り</li><li>ご契約・工事</li><li>お引き渡し・アフター</li></ol></section>

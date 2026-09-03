@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
 <title>グリームズガーデン｜山口市のバラと植物の園芸店（試作品）</title><style>
-  :root{--ink:#26302a;--sub:#66736b;--line:#e2e6dc;--bg:#f7f7f1;--card:#fff;--accent:#9f1239;--accent2:#b9463f;--tile:#3f1d2e;--r:14px}
+  :root{--ink:#26302a;--sub:#66736b;--line:#e2e6dc;--bg:#f7f7f1;--card:#fff;--accent:#9f1239;--accent2:#b9463f;--tile:#2f4a35;--r:14px}
   *{box-sizing:border-box}
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:48px 20px 52px}
+  header{background:var(--tile);color:#fff;position:relative;overflow:hidden} header .wrap{padding:48px 20px 52px;position:relative;z-index:1}
+  .art{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;pointer-events:none}
+  .band{display:block;width:100%;height:auto;margin-top:-1px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:31px;font-weight:600;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:16px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
@@ -25,18 +27,24 @@
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
   .intro{font-size:15px;line-height:2.1;color:var(--sub)}
+  .seasons{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} .seasons .card{border-top:6px solid var(--sc);padding-top:12px} .seasons b{color:var(--sc)}
+  .sym .card{border-left:5px solid var(--accent);padding-left:14px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px} .ba .pane{background:var(--card);border:1px dashed var(--line);border-radius:var(--r);padding:10px;min-height:96px;font-size:13px;color:var(--sub)} .ba .pane i{display:block;font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:4px} .ba-title{font-weight:700;margin:0 0 6px}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
-  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .seasons{grid-template-columns:repeat(4,1fr)} .fixed{display:none}}
   h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif} .tag{line-height:2}
-</style></head><body>
+
+h2::before{content:"";display:inline-block;width:18px;height:18px;margin:0 8px -3px 0;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2020C4%2010%2010%204%2020%204C20%2014%2014%2020%204%2020Z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2020C4%2010%2010%204%2020%204C20%2014%2014%2020%204%2020Z%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f6b46%22%20stroke-opacity%3D%22.08%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M20%2040c0-14%2010-24%2024-24%200%2014-10%2024-24%2024zM20%2040l24-24%22%2F%3E%3Cpath%20d%3D%22M80%20100c0-14%2010-24%2024-24%200%2014-10%2024-24%2024zM80%20100l24-24%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}</style></head><body>
 <div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
-<header><div class="wrap"><div class="area">山口県山口市 大内千坊｜バラ・植物・園芸用品・庭づくりの相談</div><h1>グリームズガーデン</h1><p class="tag">バラ園のような店内で、苗と育て方を。造園の家に生まれた店長が、品種選びから庭づくりまで相談に乗ります。</p>
+<header><svg class="art" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M-10 370 C120 320 220 280 330 190" stroke="#fff" stroke-width="5" fill="none" opacity=".14" stroke-linecap="round"/><path d="M820 380 C700 330 640 280 600 200" stroke="#fff" stroke-width="5" fill="none" opacity=".14" stroke-linecap="round"/><g transform="translate(60 340) rotate(-40) scale(0.9)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(150 300) rotate(-55) scale(0.8)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(230 250) rotate(-35) scale(0.7)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(300 205) rotate(-60) scale(0.55)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(700 340) rotate(220) scale(0.9)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(650 280) rotate(235) scale(0.8)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><g transform="translate(610 225) rotate(215) scale(0.6)" opacity=".12"><path d="M0 0 C30 -42 92 -42 122 0 C92 42 30 42 0 0 Z" fill="#fff"/><path d="M0 0 H122" stroke="#fff" stroke-width="3"/></g><circle cx="560" cy="80" r="46" fill="#fff" opacity=".07"/><circle cx="560" cy="80" r="28" fill="#fff" opacity=".07"/><circle cx="560" cy="80" r="12" fill="#fff" opacity=".1"/></svg><div class="wrap"><div class="area">山口県山口市 大内千坊｜バラ・植物・園芸用品・庭づくりの相談</div><h1>グリームズガーデン</h1><p class="tag">バラ園のような店内で、苗と育て方を。造園の家に生まれた店長が、品種選びから庭づくりまで相談に乗ります。</p>
 <a class="tel" href="tel:083-902-7700">083-902-7700<small>タップで電話がかかります（9:00〜17:00・不定休）</small></a>
 <a class="ig" href="https://www.instagram.com/greems_garden/" target="_blank" rel="noopener">Instagramで施工例を見る（@greems_garden）</a>
 <div class="rating">Googleの評価 4.3（クチコミ96件）／Instagram フォロワー3.2万人</div>
-</div></header><main class="wrap">
-<section><h2>季節の様子・作品</h2><div class="gallery"><div>施工写真</div><div>施工写真</div><div>施工写真</div><div>ビフォー</div><div>アフター</div><div>作業中</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+</div></header><svg class="band" viewBox="0 0 800 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28 V14 C60 0 120 26 180 12 C240 -2 300 24 360 10 C420 -4 480 22 540 10 C600 -2 660 24 720 12 C760 4 780 8 800 14 V28 Z" fill="var(--tile)"/></svg><main class="wrap">
+<section><h2>季節の様子・作品</h2><div class="gallery"><div>店内のバラ</div><div>季節の苗</div><div>鉢・土・園芸用品</div><div>育て方動画</div><div>庭づくりの例</div><div>店長</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+<section><h2>季節ごとにできること</h2><div class="seasons"><div class="card" style="--sc:#e8a0b4"><b>春</b><p>新苗と開花の季節。花を見ながら品種を選べます。植え付けの相談もこの時期に。</p></div><div class="card" style="--sc:#6fb36a"><b>夏</b><p>水やりと病害虫の相談。黒星病・うどんこ病など「葉がおかしい」は店頭やDMでどうぞ。</p></div><div class="card" style="--sc:#d98b3a"><b>秋</b><p>秋バラと大苗の入荷。来年の庭に向けて、植える場所や品種を一緒に考えます。</p></div><div class="card" style="--sc:#8fb3d9"><b>冬</b><p>剪定・誘引・植え替え。冬の作業が翌春の花を決めます。やり方は動画でも。</p></div></div><p class="src">※季節ごとの内容は一般的なバラの育て方をもとにした案です。お店の入荷時期に合わせて直します。<span class="todo">（ご確認ください）</span></p></section>
 <section><h2>できること</h2><ul class="list now"><li>バラの苗・植物の販売（一年を通してバラを扱う）</li><li>育て方の相談（植え付け・剪定・病気）</li><li>園芸用品・鉢・土</li><li>庭づくり・植栽のご相談<span class="todo">（実家の造園会社と連携）</span><span class="todo">（ご確認ください）</span></li><li>YouTube・Instagramで育て方を発信</li></ul></section>
 <section><h2>手がけるときに大切にしていること</h2><div class="cards people"><div class="card"><b>バラ園のような店</b><p>「お洒落なカフェに見える」「敷地内はバラ園と言っていい」という声。写真映えする店内。</p></div><div class="card"><b>育て方まで教えてくれる</b><p>「感じ良く色々教えてくれた」。YouTubeやInstagramの育て方動画のファンが県外からも来店。</p></div><div class="card"><b>一年中バラがある</b><p>品種選びのためにフランスまで行く店長。季節ごとに違う苗に出会える。</p></div></div></section>
 <section><h2>ご依頼の流れ</h2><ol class="flow"><li>Instagramでその週の入荷と営業日を確認</li><li>ご来店<span class="todo">（駐車場あり・要確認）</span></li><li>苗選び・育て方の相談</li><li>お買い上げ</li><li>育ててみて困ったらDM・電話で相談</li></ol></section>
