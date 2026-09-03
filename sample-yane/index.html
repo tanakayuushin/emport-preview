@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
 <title>作例：サンプル瓦店｜山口市の瓦・屋根修理（架空の店の作例）</title><style>
-  :root{--ink:#1f2a37;--sub:#5b6673;--line:#e3e7ec;--bg:#f7f8fa;--card:#fff;--accent:#8b2e2e;--accent2:#b9463f;--tile:#3b4a5a}
+  :root{--ink:#2b2521;--sub:#6b615a;--line:#e6ddd0;--bg:#f6f2ea;--card:#fffdf8;--accent:#8b2e2e;--accent2:#b9463f;--tile:#3b4a5a;--r:2px}
   *{box-sizing:border-box}
-  body{margin:0;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;padding-bottom:80px}
+  body{margin:0;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:36px 20px 40px}
-  .area{font-size:14px;letter-spacing:.1em;opacity:.85} h1{font-size:30px;margin:6px 0 4px;line-height:1.3}
-  .tag{font-size:17px;margin:0 0 20px;opacity:.95}
-  .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:10px;font-size:22px;font-weight:700;letter-spacing:.04em}
+  header{background:var(--tile);color:#fff} header .wrap{padding:48px 20px 52px}
+  .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:32px;font-weight:600;margin:8px 0 6px;line-height:1.3}
+  .tag{font-size:16px;margin:0 0 22px;opacity:.95}
+  .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
   .tel small{display:block;font-size:12px;font-weight:400;opacity:.9}
-  .ig{display:block;margin-top:10px;text-align:center;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:10px;padding:10px;text-decoration:none;font-size:15px}
+  .ig{display:block;margin-top:10px;text-align:center;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:var(--r);padding:10px;text-decoration:none;font-size:15px}
   .rating{margin-top:12px;font-size:14px;opacity:.9}
-  section{padding:34px 0} section+section{border-top:1px solid var(--line)}
-  h2{font-size:20px;margin:0 0 16px;padding-left:12px;border-left:5px solid var(--accent)}
-  .cards{display:grid;gap:12px} .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  section{padding:40px 0} section+section{border-top:1px solid var(--line)}
+  h2{font-size:20px;margin:0 0 16px;padding-left:12px;border-left:5px solid var(--accent);border-left:0;border-bottom:2px solid var(--accent);padding:0 0 8px 0;letter-spacing:.06em}
+  .cards{display:grid;gap:12px} .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
   .card b{display:block;font-size:16px;margin-bottom:4px} .card p{margin:0;color:var(--sub);font-size:14px}
   ul.list{padding-left:20px;margin:0} ul.list li{margin:6px 0}
   .flow{counter-reset:s;list-style:none;padding:0;margin:0}
   .flow li{counter-increment:s;position:relative;padding:10px 0 10px 44px;border-bottom:1px dashed var(--line)}
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
-  table{width:100%;border-collapse:collapse;font-size:14px;background:#fff} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:#eef1f4;width:38%}
+  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
-  footer{background:#eceff3;color:var(--sub);font-size:12px;padding:24px 0}
+  footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
+  .tag{line-height:2} .card b{letter-spacing:.04em}
 </style></head><body>
 <div class="notice">【作例】このページはEmport AIの作例です。「サンプル瓦店」は架空の店で、電話番号・口コミ・住所はすべてダミーです。</div>
 <header><div class="wrap"><div class="area">山口県山口市｜瓦・屋根の修理（このページは架空の店の作例です）</div><h1>サンプル瓦店</h1><p class="tag">屋根のこと、分からないことも不安なことも、気軽に相談できる地元の瓦屋です。</p>
 <a class="tel" href="tel:000-0000-0000">000-0000-0000<small>タップで電話がかかります</small></a>
 <div class="rating">Googleの評価 4.8（クチコミ12件）※架空の数字です</div>
 </div></header><main class="wrap">
-<section><h2>口コミで多くいただく声</h2><div class="cards"><div class="card"><b>相談しやすい</b><p>屋根の分からないこと・不安なことを、気軽に聞けて親切に答えてもらえた。</p></div><div class="card"><b>地元で頼りになる</b><p>近くにいてくれるので、ふとした時にすぐ相談できる。</p></div><div class="card"><b>真面目な職人仕事</b><p>信頼できる職人が、ひとつひとつ丁寧に仕上げる。</p></div></div>
+<section><h2>口コミから見えた、この店らしさ</h2><div class="cards"><div class="card"><b>相談しやすい</b><p>屋根の分からないこと・不安なことを、気軽に聞けて親切に答えてもらえた。</p></div><div class="card"><b>地元で頼りになる</b><p>近くにいてくれるので、ふとした時にすぐ相談できる。</p></div><div class="card"><b>真面目な職人仕事</b><p>信頼できる職人が、ひとつひとつ丁寧に仕上げる。</p></div></div>
 <p class="src">※実際の制作では、Googleマップの口コミを要約して載せます（原文は転載しません）。</p></section>
 <section><h2>こんな時にご相談ください</h2><ul class="list"><li>台風や強風のあと、瓦がずれた・落ちた気がする</li><li>天井にしみがある、雨の日にぽたぽた音がする（雨漏り）</li><li>棟の漆喰がはがれてきた</li><li>古い瓦屋根の葺き替え・部分的な差し替え</li><li>「点検した方がいいのか分からない」という段階でも大丈夫です</li></ul>
 </section>
@@ -49,5 +50,5 @@
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、サンプル瓦店様にご覧いただくための試作品です。掲載内容は公開情報（架空のサンプル）と口コミの要約をもとに作成した「案」で、サンプル瓦店様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、サンプル瓦店様にご覧いただくための試作品です。掲載内容は公開情報（架空のサンプル）と口コミから読み取った印象をもとに作成した「案」で、サンプル瓦店様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:000-0000-0000">電話で相談する（000-0000-0000）</a></div></body></html>
