@@ -23,33 +23,29 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
   
 </style></head><body>
-<div class="notice">【試作品プレビュー】文章はGoogleの口コミと公開情報から読み取った「この店らしさ」をもとにした案です。写真・ロゴは使っていません。不要でしたら削除します。</div>
+<div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">北九州市・山口県｜雨漏り修理・屋根・外装工事</div><h1>大樹建設</h1><p class="tag">雨漏りは一度で止める。見積りは何パターンも出して、写真でご説明する屋根屋です。</p>
 <a class="tel" href="tel:080-3981-1713">080-3981-1713<small>タップで電話がかかります</small></a>
 <a class="ig" href="https://www.instagram.com/taijukensetsu0412/" target="_blank" rel="noopener">Instagramで施工例を見る（@taijukensetsu0412）</a>
 <div class="rating">Googleの評価 4.9（クチコミ12件）</div>
 </div></header><main class="wrap">
-<section><h2>口コミから見えた、この会社らしさ</h2><div class="cards"><div class="card"><b>一度で決める腕</b><p>壁まで水が入るような雨漏りが一度の工事で止まった、という声が複数。原因を見つける力が評価されています。</p></div><div class="card"><b>予算に寄り添う</b><p>見積りを何パターンも作り、小さな修理には負担の少ない方法を提案する。押し売りの逆。</p></div><div class="card"><b>見えない所を見せる</b><p>施工前後の写真で説明し、工事後もフォロー。屋根の上を「見える化」する誠実さ。</p></div></div>
-<p class="src">※Googleマップの口コミから読み取った印象をまとめたものです。原文は転載していません。</p></section>
-<section><h2>こんな時にご相談ください</h2><ul class="list"><li>天井にしみ、雨の日にぽたぽた音がする（雨漏り）</li><li>台風や強風のあと、瓦がずれた・飛んできた物で屋根に穴が空いた</li><li>雨樋が外れた・詰まった</li><li>天窓まわりからの雨漏り</li><li>瓦の葺き替え、外装（外壁）の補修</li><li>遠方でも、まず状況をお聞かせください</li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>突然の訪問営業はしません</b><p>ご連絡をいただいてからお伺いします。不安をあおる勧誘はしません。</p></div><div class="card"><b>見積りは内訳と複数案</b><p>「今すぐ必要な工事」と「先送りできる工事」を分けてご提案します。</p></div><div class="card"><b>写真で報告</b><p>屋根の上は見えないからこそ、施工前・施工後を写真でお見せします。</p></div></div>
-<p class="src">※屋根工事では「点検します」と突然訪問し不安をあおる勧誘のトラブルが多く報告されています（国民生活センター 2023年10月）。上の3つは口コミの人柄から作った「約束の案」です。</p>
-</section>
+<section><h2>安心してご依頼いただくために</h2><div class="cards "><div class="card"><b>突然の訪問営業はしません</b><p>ご連絡をいただいてからお伺いします。不安をあおる勧誘はしません。</p></div><div class="card"><b>見積りは内訳と複数案</b><p>「今すぐ必要な工事」と「先送りできる工事」を分けてご提案します。</p></div><div class="card"><b>写真で報告</b><p>屋根の上は見えないからこそ、施工前・施工後を写真でお見せします。</p></div></div><p class="src">※屋根工事では「点検します」と突然訪問し不安をあおる勧誘のトラブルが多く報告されています（国民生活センター 2023年10月）。上の3つは口コミの人柄から作った「約束の案」です。</p></section>
+<section><h2>こんな時にご相談ください</h2><ul class="list now"><li>天井にしみ、雨の日にぽたぽた音がする（雨漏り）</li><li>台風や強風のあと、瓦がずれた・飛んできた物で屋根に穴が空いた</li><li>雨樋が外れた・詰まった</li><li>天窓まわりからの雨漏り</li><li>瓦の葺き替え、外装（外壁）の補修</li><li>遠方でも、まず状況をお聞かせください</li></ul></section>
 <section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話またはInstagramのDMで状況をお知らせください</li><li>現地で屋根の状態を確認</li><li>お見積り（複数案・内訳つき）をご説明</li><li>ご納得いただいてから工事</li><li>施工前後の写真でご報告・アフターフォロー</li></ol></section>
-<section><h2>料金の目安・対応エリア</h2><table><tr><th>大樹建設の料金</th><td>（お電話で確認して記載します）</td></tr><tr><th>雨漏り修理の全国平均</th><td>約16.4万円（ミツモア相場研究所 2026年）</td></tr><tr><th>屋根修理・リフォームの全国平均</th><td>約51.6万円（同上）</td></tr><tr><th>対応エリア</th><td>北九州市を中心に九州・山口県<span class="todo">（Instagramの記載。詳細はご確認ください）</span></td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>屋号</th><td>大樹建設</td></tr><tr><th>所在地</th><td>〒803-0864 福岡県北九州市小倉北区熊谷1丁目3-8</td></tr><tr><th>電話</th><td>080-3981-1713</td></tr><tr><th>Instagram</th><td>@taijukensetsu0412</td></tr><tr><th>専門</th><td>屋根・外装工事、瓦葺き</td></tr><tr><th>代表者・創業・資格</th><td><span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
+<section><h2>料金の目安・対応エリア</h2><table><tr><th>大樹建設の料金</th><td>（お電話で確認して記載します）</td></tr><tr><th>雨漏り修理の全国平均</th><td>約16.4万円（ミツモア相場研究所 2026年）</td></tr><tr><th>屋根修理・リフォームの全国平均</th><td>約51.6万円（同上）</td></tr><tr><th>対応エリア</th><td>北九州市を中心に九州・山口県<span class="todo">（Instagramの記載。詳細はご確認ください）</span></td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>屋号</th><td>大樹建設</td></tr><tr><th>所在地</th><td>〒803-0864 福岡県北九州市小倉北区熊谷1丁目3-8</td></tr><tr><th>電話</th><td>080-3981-1713</td></tr><tr><th>Instagram</th><td>@taijukensetsu0412</td></tr><tr><th>専門</th><td>屋根・外装工事、瓦葺き</td></tr><tr><th>代表者・創業・資格</th><td><span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>お客様の声</h2><div class="cards people"><div class="card"><b>一度で決める腕</b><p>壁まで水が入るような雨漏りが一度の工事で止まった、という声が複数。原因を見つける力が評価されています。</p></div><div class="card"><b>予算に寄り添う</b><p>見積りを何パターンも作り、小さな修理には負担の少ない方法を提案する。押し売りの逆。</p></div><div class="card"><b>見えない所を見せる</b><p>施工前後の写真で説明し、工事後もフォロー。屋根の上を「見える化」する誠実さ。</p></div></div></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、大樹建設様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミから読み取った印象をもとに作成した「案」で、大樹建設様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、大樹建設様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミをもとに作成した「案」で、大樹建設様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:080-3981-1713">電話で相談する（080-3981-1713）</a></div></body></html>

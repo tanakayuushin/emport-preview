@@ -6,15 +6,15 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:52px 20px 56px}
-  .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:34px;font-weight:800;margin:8px 0 6px;line-height:1.3}
+  header{background:var(--tile);color:#fff} header .wrap{padding:60px 20px 60px}
+  .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:36px;font-weight:800;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
   .tel small{display:block;font-size:12px;font-weight:400;opacity:.9}
   .ig{display:block;margin-top:10px;text-align:center;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:var(--r);padding:10px;text-decoration:none;font-size:15px}
   .rating{margin-top:12px;font-size:14px;opacity:.9}
-  section{padding:40px 0} section+section{border-top:1px solid var(--line)}
-  h2{font-size:20px;margin:0 0 16px;padding-left:12px;border-left:5px solid var(--accent);color:#fff;border-left-color:var(--accent)}
+  section{padding:42px 0} section+section{border-top:1px solid var(--line)}
+  h2{font-size:20px;margin:0 0 16px;padding-left:12px;border-left:5px solid var(--accent);color:#fff;border-left-color:var(--accent);letter-spacing:.08em}
   .cards{display:grid;gap:12px} .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
   .card b{display:block;font-size:16px;margin-bottom:4px} .card p{margin:0;color:var(--sub);font-size:14px}
   ul.list{padding-left:20px;margin:0} ul.list li{margin:6px 0}
@@ -23,32 +23,30 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0}
+  th{background:#1b2436;color:#cfd8e3} table{background:#161d2b} .notice{background:#2a2410;color:#f2dc9a;border-color:#4a3f1a} footer{background:#0b1018;color:#8090a4} .fixed{background:rgba(15,21,32,.95)} .src{color:#8a97a8} .todo{color:#f0a0a0} .menu .card{border-left:3px solid var(--accent)}
 </style></head><body>
-<div class="notice">【試作品プレビュー】文章はGoogleの口コミと公開情報から読み取った「この店らしさ」をもとにした案です。写真・ロゴは使っていません。不要でしたら削除します。</div>
+<div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">山口県山口市｜新築外構・外構リフォーム・カーポート・フェンス・ウッドデッキ</div><h1>ARS WORKS アルスワークス</h1><p class="tag">限られた予算の中で、カッコよくこだわる。職人出身の代表が設計から施工まで。</p>
 <a class="tel" href="tel:083-976-6582">083-976-6582<small>タップで電話がかかります（〜17:00）</small></a>
 <a class="ig" href="https://www.instagram.com/ars.works_exterior.garden/" target="_blank" rel="noopener">Instagramで施工例を見る（@ars.works_exterior.garden）</a>
 <div class="rating">Googleの評価 5.0（クチコミ7件）</div>
 </div></header><main class="wrap">
-<section><h2>口コミから見えた、この店のこだわり</h2><div class="cards"><div class="card"><b>分からなくても大丈夫</b><p>外構の知識ゼロの夫婦にも、打ち合わせから丁寧に説明。納得して契約できた。</p></div><div class="card"><b>予算内でカッコよく</b><p>舗装とフェンスだけのつもりが「限られた予算でこだわりましょう」と背中を押され、意気投合。</p></div><div class="card"><b>要望に臨機応変</b><p>連絡ミスのイレギュラーにも柔軟に対応。夏休み前に間に合わせてくれた。</p></div></div>
-<p class="src">※Googleマップの口コミから読み取った印象をまとめたものです。原文は転載していません。</p></section>
-<section><h2>できること・ご相談いただけること</h2><ul class="list"><li>新築外構（駐車場・アプローチ・フェンス・門まわり）</li><li>外構リフォーム（犬走・砂利敷き・カーポート・テラス囲い）</li><li>ウッドデッキ・お庭づくり</li><li>店舗・賃貸住宅のエクステリア</li><li>設計から施工管理まで一貫（職人出身・2023年1月独立）</li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>図面と見積りで説明</b><p>完成形のイメージと細かな仕様を説明してからご契約。</p></div><div class="card"><b>予算を先に聞きます</b><p>予算の中で優先順位を一緒に決めます。</p></div><div class="card"><b>施工例はInstagramで</b><p>実際の仕上がりを事前に見られます。</p></div></div>
-</section>
-<section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話またはDMでご相談</li><li>現地確認・ヒアリング</li><li>プランとお見積り</li><li>ご契約・工事</li><li>お引き渡し・アフター</li></ol></section>
-<section><h2>営業時間・対応エリア</h2><table><tr><th>営業時間</th><td>〜17:00<span class="todo">（定休日はご確認ください）</span></td></tr><tr><th>対応エリア</th><td>山口市・防府市・宇部市など<span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>店名</th><td>ARS WORKS アルスワークス</td></tr><tr><th>所在地</th><td>〒753-0221 山口県山口市大内矢田北4丁目3-13</td></tr><tr><th>電話</th><td>083-976-6582</td></tr><tr><th>Instagram</th><td>@ars.works_exterior.garden</td></tr><tr><th>創業</th><td>2023年1月独立開業（Instagramの記載）</td></tr><tr><th>代表・資格</th><td><span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
+<section><h2>GALLERY</h2><div class="gallery"><div>施工写真</div><div>施工写真</div><div>施工写真</div><div>ビフォー</div><div>アフター</div><div>作業中</div></div><p class="src">写真は公開時に本物に差し替えます。Instagramの投稿をそのまま並べることもできます。</p></section>
+<section><h2>MENU</h2><div class="cards menu"><div class="card"><b>新築外構</b><p>（駐車場・アプローチ・フェンス・門まわり）</p></div><div class="card"><b>外構リフォーム</b><p>（犬走・砂利敷き・カーポート・テラス囲い）</p></div><div class="card"><b>ウッドデッキ・お庭づくり</b><p></p></div><div class="card"><b>店舗・賃貸住宅のエクステリア</b><p></p></div><div class="card"><b>設計から施工管理まで一貫</b><p>（職人出身・2023年1月独立）</p></div></div></section>
+<section><h2>仕上がりへのこだわり</h2><div class="cards people"><div class="card"><b>分からなくても大丈夫</b><p>外構の知識ゼロの夫婦にも、打ち合わせから丁寧に説明。納得して契約できた。</p></div><div class="card"><b>予算内でカッコよく</b><p>舗装とフェンスだけのつもりが「限られた予算でこだわりましょう」と背中を押され、意気投合。</p></div><div class="card"><b>要望に臨機応変</b><p>連絡ミスのイレギュラーにも柔軟に対応。夏休み前に間に合わせてくれた。</p></div></div></section>
+<section><h2>FLOW</h2><ol class="flow"><li>お電話またはDMでご相談</li><li>現地確認・ヒアリング</li><li>プランとお見積り</li><li>ご契約・工事</li><li>お引き渡し・アフター</li></ol></section>
+<section><h2>営業時間・対応エリア</h2><table><tr><th>営業時間</th><td>〜17:00<span class="todo">（定休日はご確認ください）</span></td></tr><tr><th>対応エリア</th><td>山口市・防府市・宇部市など<span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>店名</th><td>ARS WORKS アルスワークス</td></tr><tr><th>所在地</th><td>〒753-0221 山口県山口市大内矢田北4丁目3-13</td></tr><tr><th>電話</th><td>083-976-6582</td></tr><tr><th>Instagram</th><td>@ars.works_exterior.garden</td></tr><tr><th>創業</th><td>2023年1月独立開業（Instagramの記載）</td></tr><tr><th>代表・資格</th><td><span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>POLICY</h2><div class="cards "><div class="card"><b>図面と見積りで説明</b><p>完成形のイメージと細かな仕様を説明してからご契約。</p></div><div class="card"><b>予算を先に聞きます</b><p>予算の中で優先順位を一緒に決めます。</p></div><div class="card"><b>施工例はInstagramで</b><p>実際の仕上がりを事前に見られます。</p></div></div></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、ARS WORKS アルスワークス様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミから読み取った印象をもとに作成した「案」で、ARS WORKS アルスワークス様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、ARS WORKS アルスワークス様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミをもとに作成した「案」で、ARS WORKS アルスワークス様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:083-976-6582">電話で相談する（083-976-6582）</a></div></body></html>

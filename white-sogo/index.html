@@ -6,14 +6,14 @@
   body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;padding-bottom:80px}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
   .notice{background:#fff7e6;border-bottom:1px solid #f0d9a8;color:#6b4a00;font-size:13px;padding:10px 20px;text-align:center}
-  header{background:var(--tile);color:#fff} header .wrap{padding:36px 20px 40px}
+  header{background:var(--tile);color:#fff} header .wrap{padding:32px 20px 36px}
   .area{font-size:13px;letter-spacing:.12em;opacity:.85} h1{font-size:32px;font-weight:900;margin:8px 0 6px;line-height:1.3}
   .tag{font-size:17px;margin:0 0 22px;opacity:.95}
   .tel{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;padding:16px;border-radius:var(--r);font-size:22px;font-weight:700;letter-spacing:.04em}
   .tel small{display:block;font-size:12px;font-weight:400;opacity:.9}
   .ig{display:block;margin-top:10px;text-align:center;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:var(--r);padding:10px;text-decoration:none;font-size:15px}
   .rating{margin-top:12px;font-size:14px;opacity:.9}
-  section{padding:32px 0} section+section{border-top:1px solid var(--line)}
+  section{padding:30px 0} section+section{border-top:1px solid var(--line)}
   h2{font-size:20px;margin:0 0 16px;padding-left:12px;border-left:5px solid var(--accent);border-left-width:8px}
   .cards{display:grid;gap:12px} .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
   .card b{display:block;font-size:16px;margin-bottom:4px} .card p{margin:0;color:var(--sub);font-size:14px}
@@ -23,31 +23,28 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  .tel{font-size:24px} .card b{font-size:17px}
+  .tel{font-size:26px;padding:20px} .card b{font-size:17px} .now li{font-weight:600}
 </style></head><body>
 <div class="notice">【試作品プレビュー】現在のWixのサイトを、口コミをもとに作り直した「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">山口県防府市 国衙｜エアコンの取り外し・回収、高所作業、住まいの困りごと</div><h1>ホワイト 総合サービス</h1><p class="tag">引越し・買い替えで不要になったエアコンを、取り外しから回収まで。電話一本で、手際よく。</p>
 <a class="tel" href="tel:070-9153-5817">070-9153-5817<small>タップで電話がかかります（24時間受付）</small></a>
 <div class="rating">Googleの評価 4.8（クチコミ33件）</div>
 </div></header><main class="wrap">
-<section><h2>口コミで分かる、この店の頼もしさ</h2><div class="cards"><div class="card"><b>取り外しから回収まで</b><p>「引越しでエアコン2台を取り外し回収」「3階のひさしの上の室外機も手際よく、予定より早く完了」。</p></div><div class="card"><b>費用の説明どおり</b><p>「予め確認したとおり、取外しや運搬費も含めて費用は発生しなかった」という声が複数。</p></div><div class="card"><b>電話対応がスムーズ</b><p>「電話での対応もスムーズで作業も手早い」「20年以上前の錆びた室外機も引き取ってもらえた」。</p></div></div>
-<p class="src">※Googleマップの口コミを要約したものです。原文は転載していません。費用の条件は必ずご確認ください。</p></section>
-<section><h2>できること・ご相談いただけること</h2><ul class="list"><li>エアコンの取り外し・回収<span class="todo">（費用の条件はご確認ください）</span></li><li>室外機の高所作業（ひさし上・壁面）</li><li>古い家電・不用品の引き取りのご相談<span class="todo">（許可の範囲はご確認ください）</span></li><li>住まいの困りごとの相談<span class="todo">（内容はご確認ください）</span></li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>費用は電話で先に確定</b><p>取り外し・運搬・回収それぞれに費用がかかるかを、お電話で先にお伝えします。</p></div><div class="card"><b>後から追加しません</b><p>「後から追加料金では？」という不安に、事前の説明で答えます。</p></div><div class="card"><b>高所も対応</b><p>3階のひさしの上など、高い場所の室外機もご相談ください。</p></div></div>
-</section>
-<section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話（台数・設置場所・階数）</li><li>費用の条件と日程のご案内</li><li>訪問・取り外し・回収</li><li>完了確認</li></ol></section>
-<section><h2>営業時間・対応エリア</h2><table><tr><th>受付</th><td>24時間<span class="todo">（Googleマップ記載・ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>防府市を中心に<span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>屋号</th><td>ホワイト 総合サービス</td></tr><tr><th>所在地</th><td>山口県防府市国衙1丁目5-27</td></tr><tr><th>電話</th><td>070-9153-5817</td></tr><tr><th>現在のサイト</th><td>nandemowhite.wixsite.com</td></tr><tr><th>事業内容・許可</th><td><span class="todo">（ご確認ください。口コミには他業務の記載もあるため、掲載する業務範囲はご相談のうえ決めます）</span></td></tr></table>
-</section>
+<section><h2>今日できること</h2><ul class="list now"><li>エアコンの取り外し・回収<span class="todo">（費用の条件はご確認ください）</span></li><li>室外機の高所作業（ひさし上・壁面）</li><li>古い家電・不用品の引き取りのご相談<span class="todo">（許可の範囲はご確認ください）</span></li><li>住まいの困りごとの相談<span class="todo">（内容はご確認ください）</span></li></ul></section>
+<section><h2>対応の流れ</h2><ol class="flow"><li>お電話（台数・設置場所・階数）</li><li>費用の条件と日程のご案内</li><li>訪問・取り外し・回収</li><li>完了確認</li></ol></section>
+<section><h2>選ばれる理由</h2><div class="cards people"><div class="card"><b>取り外しから回収まで</b><p>「引越しでエアコン2台を取り外し回収」「3階のひさしの上の室外機も手際よく、予定より早く完了」。</p></div><div class="card"><b>費用の説明どおり</b><p>「予め確認したとおり、取外しや運搬費も含めて費用は発生しなかった」という声が複数。</p></div><div class="card"><b>電話対応がスムーズ</b><p>「電話での対応もスムーズで作業も手早い」「20年以上前の錆びた室外機も引き取ってもらえた」。</p></div></div></section>
+<section><h2>お約束</h2><div class="cards "><div class="card"><b>費用は電話で先に確定</b><p>取り外し・運搬・回収それぞれに費用がかかるかを、お電話で先にお伝えします。</p></div><div class="card"><b>後から追加しません</b><p>「後から追加料金では？」という不安に、事前の説明で答えます。</p></div><div class="card"><b>高所も対応</b><p>3階のひさしの上など、高い場所の室外機もご相談ください。</p></div></div></section>
+<section><h2>営業のご案内</h2><table><tr><th>受付</th><td>24時間<span class="todo">（Googleマップ記載・ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>防府市を中心に<span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>屋号</th><td>ホワイト 総合サービス</td></tr><tr><th>所在地</th><td>山口県防府市国衙1丁目5-27</td></tr><tr><th>電話</th><td>070-9153-5817</td></tr><tr><th>現在のサイト</th><td>nandemowhite.wixsite.com</td></tr><tr><th>事業内容・許可</th><td><span class="todo">（ご確認ください。口コミには他業務の記載もあるため、掲載する業務範囲はご相談のうえ決めます）</span></td></tr></table></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、ホワイト 総合サービス様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・現在のWixサイト）と口コミから読み取った印象をもとに作成した「案」で、ホワイト 総合サービス様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、ホワイト 総合サービス様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・現在のWixサイト）と口コミをもとに作成した「案」で、ホワイト 総合サービス様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:070-9153-5817">電話で相談する（070-9153-5817）</a></div></body></html>

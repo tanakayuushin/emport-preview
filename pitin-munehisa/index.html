@@ -23,31 +23,28 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
   
 </style></head><body>
-<div class="notice">【試作品プレビュー】文章はGoogleの口コミと公開情報から読み取った「この店らしさ」をもとにした案です。写真・ロゴは使っていません。不要でしたら削除します。</div>
+<div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">山口県宇部市（妻崎開作）・山陽小野田市（小野田店）｜修理・車検・鈑金塗装・中古車</div><h1>ピットインむねひさ</h1><p class="tag">昔ながらの修理工場。人当たりが良く、親身に。中古車の不具合も、細かいところまで直します。</p>
 <a class="tel" href="tel:0836-44-1111">0836-44-1111<small>タップで電話がかかります（9:00〜19:00（月〜土））</small></a>
 <div class="rating">Googleの評価 4.0（クチコミ12件）</div>
 </div></header><main class="wrap">
-<section><h2>口コミから見えた、この会社らしさ</h2><div class="cards"><div class="card"><b>人当たりが良く親身</b><p>「昔ながらの修理工場。人当たりがとても良く親身になってくれる」「信用できる」。</p></div><div class="card"><b>細かいところまで直す</b><p>「中古車のエアコン不具合を、整備士が理解して細かいところまで完全に直してくれた」。</p></div><div class="card"><b>安く買える中古車</b><p>「軽自動車が安いので購入」。販売から整備まで一か所で。</p></div></div>
-<p class="src">※Googleマップの口コミを要約したものです。原文は転載していません。低評価の口コミもあるため、下の「約束」に対応方針を案として入れています。</p></section>
-<section><h2>できること・ご相談いただけること</h2><ul class="list"><li>修理・一般整備・オイル交換</li><li>車検（認証工場）</li><li>鈑金塗装</li><li>中古車販売・買取、新車のご相談</li><li>代車無料・ローン相談・ハイブリッド車対応<span class="todo">（グーネット記載・ご確認ください）</span></li><li>小野田店（山陽小野田市新生）でも対応</li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>納期と約束は書面で</b><p>お預かり時に、完了予定日と連絡方法を書いてお渡しします。遅れる時は先にご連絡します。</p></div><div class="card"><b>見積りは作業の前に</b><p>直す範囲と金額を説明してから作業します。</p></div><div class="card"><b>代車があります</b><p>修理中もお車に困らないように。<span class="todo">（台数・条件はご確認ください）</span></p></div></div>
-</section>
+<section><h2>安心してご依頼いただくために</h2><div class="cards "><div class="card"><b>納期と約束は書面で</b><p>お預かり時に、完了予定日と連絡方法を書いてお渡しします。遅れる時は先にご連絡します。</p></div><div class="card"><b>見積りは作業の前に</b><p>直す範囲と金額を説明してから作業します。</p></div><div class="card"><b>代車があります</b><p>修理中もお車に困らないように。<span class="todo">（台数・条件はご確認ください）</span></p></div></div></section>
+<section><h2>できること</h2><ul class="list now"><li>修理・一般整備・オイル交換</li><li>車検（認証工場）</li><li>鈑金塗装</li><li>中古車販売・買取、新車のご相談</li><li>代車無料・ローン相談・ハイブリッド車対応<span class="todo">（グーネット記載・ご確認ください）</span></li><li>小野田店（山陽小野田市新生）でも対応</li></ul></section>
 <section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話（症状をひとことで）</li><li>ご来店または引取り</li><li>お見積り・完了予定日のご案内</li><li>修理</li><li>お引き渡し</li></ol></section>
-<section><h2>営業時間・対応エリア</h2><table><tr><th>営業時間</th><td>9:00〜19:00<span class="todo">（月〜土）</span>／日祝休<span class="todo">（グーネット記載・ご確認ください）</span></td></tr><tr><th>店舗</th><td>宇部本店（妻崎開作）・小野田店（山陽小野田市新生2-5-5）</td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>社名</th><td>有限会社ピットインむねひさ</td></tr><tr><th>所在地</th><td>〒759-0204 山口県宇部市妻崎開作西割724-2</td></tr><tr><th>電話</th><td>0836-44-1111</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
+<section><h2>料金・対応エリア</h2><table><tr><th>営業時間</th><td>9:00〜19:00<span class="todo">（月〜土）</span>／日祝休<span class="todo">（グーネット記載・ご確認ください）</span></td></tr><tr><th>店舗</th><td>宇部本店（妻崎開作）・小野田店（山陽小野田市新生2-5-5）</td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>社名</th><td>有限会社ピットインむねひさ</td></tr><tr><th>所在地</th><td>〒759-0204 山口県宇部市妻崎開作西割724-2</td></tr><tr><th>電話</th><td>0836-44-1111</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>お客様の声</h2><div class="cards people"><div class="card"><b>人当たりが良く親身</b><p>「昔ながらの修理工場。人当たりがとても良く親身になってくれる」「信用できる」。</p></div><div class="card"><b>細かいところまで直す</b><p>「中古車のエアコン不具合を、整備士が理解して細かいところまで完全に直してくれた」。</p></div><div class="card"><b>安く買える中古車</b><p>「軽自動車が安いので購入」。販売から整備まで一か所で。</p></div></div></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、ピットインむねひさ様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・グーネット・iタウンページ）と口コミから読み取った印象をもとに作成した「案」で、ピットインむねひさ様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、ピットインむねひさ様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・グーネット・iタウンページ）と口コミをもとに作成した「案」で、ピットインむねひさ様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:0836-44-1111">電話で相談する（0836-44-1111）</a></div></body></html>

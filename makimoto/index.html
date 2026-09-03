@@ -23,31 +23,28 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)}
+  .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
 </style></head><body>
-<div class="notice">【試作品プレビュー】文章はGoogleの口コミと公開情報から読み取った「この店らしさ」をもとにした案です。写真・ロゴは使っていません。不要でしたら削除します。</div>
+<div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">山口県宇部市 東岐波｜車検・修理・鈑金塗装・中古車</div><h1>マキモト自動車</h1><p class="tag">休みの日でも故障車を引き取りに来る。親切で丁寧、塗装も修理も「ここが一番」と言われる東岐波の整備工場。</p>
 <a class="tel" href="tel:0836-58-6630">0836-58-6630<small>タップで電話がかかります（〜18:00）</small></a>
 <div class="rating">Googleの評価 4.8（クチコミ8件）</div>
 </div></header><main class="wrap">
-<section><h2>口コミで伝わってくる、お店の空気</h2><div class="cards"><div class="card"><b>塗装も修理もここが一番</b><p>「親切。丁寧。塗装や修理はここが一番」「家族の車も購入・修理をお任せ」。</p></div><div class="card"><b>休業日でも引取り</b><p>「休業日に故障車の引取りに対応してもらえた」。</p></div><div class="card"><b>接客が良い</b><p>「親切で接客が良い」。</p></div></div>
-<p class="src">※Googleマップの口コミから読み取った印象をまとめたものです。原文は転載していません。</p></section>
-<section><h2>できること・ご相談いただけること</h2><ul class="list"><li>車検・法定点検</li><li>修理・整備・オイル交換</li><li>鈑金塗装（キズ・へこみ）</li><li>中古車販売・買取、新車のご相談</li><li>故障車の引取り（土日・休業日はご相談ください）</li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>見積りは作業の前に</b><p>直す範囲と金額を説明してから作業します。</p></div><div class="card"><b>動かなくなったら電話を</b><p>引取りに伺えるかをその場でお答えします。</p></div><div class="card"><b>家族の車を任せられる</b><p>常連さんが家族の車もまとめて任せている工場です。</p></div></div>
-</section>
-<section><h2>ご依頼の流れ</h2><ol class="flow"><li>お電話（症状と場所）</li><li>ご来店または引取り</li><li>お見積りのご説明</li><li>修理・車検</li><li>お引き渡し</li></ol></section>
-<section><h2>営業時間・対応エリア</h2><table><tr><th>営業時間</th><td>〜18:00<span class="todo">（土曜は不定・ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>宇部市を中心に<span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>社名</th><td>有限会社マキモト自動車</td></tr><tr><th>所在地</th><td>〒755-0241 山口県宇部市東岐波402-1</td></tr><tr><th>電話</th><td>0836-58-6630</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
+<section><h2>こんなお店です</h2><div class="cards people"><div class="card"><b>塗装も修理もここが一番</b><p>「親切。丁寧。塗装や修理はここが一番」「家族の車も購入・修理をお任せ」。</p></div><div class="card"><b>休業日でも引取り</b><p>「休業日に故障車の引取りに対応してもらえた」。</p></div><div class="card"><b>接客が良い</b><p>「親切で接客が良い」。</p></div></div></section>
+<section><h2>よくあるご相談</h2><ul class="list now"><li>車検・法定点検</li><li>修理・整備・オイル交換</li><li>鈑金塗装（キズ・へこみ）</li><li>中古車販売・買取、新車のご相談</li><li>故障車の引取り（土日・休業日はご相談ください）</li></ul></section>
+<section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>お電話（症状と場所）</li><li>ご来店または引取り</li><li>お見積りのご説明</li><li>修理・車検</li><li>お引き渡し</li></ol></section>
+<section><h2>お気軽にどうぞ</h2><div class="cards "><div class="card"><b>見積りは作業の前に</b><p>直す範囲と金額を説明してから作業します。</p></div><div class="card"><b>動かなくなったら電話を</b><p>引取りに伺えるかをその場でお答えします。</p></div><div class="card"><b>家族の車を任せられる</b><p>常連さんが家族の車もまとめて任せている工場です。</p></div></div></section>
+<section><h2>営業のご案内</h2><table><tr><th>営業時間</th><td>〜18:00<span class="todo">（土曜は不定・ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>宇部市を中心に<span class="todo">（ご確認ください）</span></td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>社名</th><td>有限会社マキモト自動車</td></tr><tr><th>所在地</th><td>〒755-0241 山口県宇部市東岐波402-1</td></tr><tr><th>電話</th><td>0836-58-6630</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、マキモト自動車様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・マピオン・なび山口）と口コミから読み取った印象をもとに作成した「案」で、マキモト自動車様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、マキモト自動車様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・マピオン・なび山口）と口コミをもとに作成した「案」で、マキモト自動車様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:0836-58-6630">電話で相談する（0836-58-6630）</a></div></body></html>

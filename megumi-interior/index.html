@@ -23,30 +23,29 @@
   .flow li::before{content:counter(s);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--tile);color:#fff;text-align:center;line-height:30px;font-weight:700}
   table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:rgba(0,0,0,.04);width:38%}
   .todo{color:var(--accent2);font-size:13px} .src{font-size:12px;color:var(--sub);margin-top:8px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px} .gallery div{aspect-ratio:1;background:rgba(127,127,127,.12);border:1px dashed var(--line);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--sub);text-align:center;padding:6px}
+  .intro{font-size:15px;line-height:2.1;color:var(--sub)}
   footer{background:rgba(0,0,0,.05);color:var(--sub);font-size:12px;padding:24px 0}
   .fixed{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line)} .fixed .tel{padding:12px;font-size:18px}
   @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr)} .fixed{display:none}}
-  .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)}
+  .card{box-shadow:0 2px 0 #f0e3d2} .tel{box-shadow:0 4px 0 rgba(0,0,0,.15)} .people .card{border-left:6px solid var(--accent)}
 </style></head><body>
-<div class="notice">【試作品プレビュー】文章はGoogleの口コミと公開情報から読み取った「この店らしさ」をもとにした案です。写真・ロゴは使っていません。不要でしたら削除します。</div>
+<div class="notice">【試作品プレビュー】Googleの口コミと公開情報をもとにした「案」です。写真・ロゴは使っていません。不要でしたら削除します。</div>
 <header><div class="wrap"><div class="area">山口県宇部市・山口市｜壁紙クロス・床の張り替え、穴・キズの補修</div><h1>恵インテリア</h1><p class="tag">壁紙の穴ひとつから。クロスと床の張り替え・補修を、宇部・山口で。</p>
 <a class="tel" href="tel:080-6346-9147">080-6346-9147<small>タップで電話がかかります（〜20:00）</small></a>
 <a class="ig" href="https://www.instagram.com/megumi_k2025/" target="_blank" rel="noopener">Instagramで施工例を見る（@megumi_k2025）</a>
 <div class="rating">Googleの評価 5.0（クチコミ1件）</div>
 </div></header><main class="wrap">
-<section><h2>できること・ご相談いただけること</h2><ul class="list"><li>壁紙（クロス）の張り替え（1部屋から）</li><li>壁紙の穴・キズ・はがれの補修</li><li>床の張り替え・クッションフロア・シート施工</li><li>退去時・入居前の原状回復<span class="todo">（ご確認ください）</span></li><li>お見積りはDM・お電話で写真を送るだけ</li></ul>
-</section>
-<section><h2>安心してご相談いただくために（案）</h2><div class="cards"><div class="card"><b>写真で概算</b><p>傷や部屋の写真をDMで送っていただければ、概算をお伝えします。</p></div><div class="card"><b>1か所でも</b><p>小さな補修も遠慮なくご相談ください。</p></div><div class="card"><b>夜20時まで相談OK</b><p>お仕事帰りでもご連絡いただけます。<span class="todo">（受付時間はご確認ください）</span></p></div></div>
-</section>
-<section><h2>ご依頼の流れ</h2><ol class="flow"><li>DMまたはお電話で写真を送る</li><li>概算のご案内</li><li>現地確認・正式お見積り</li><li>施工（多くは1日）</li><li>お引き渡し</li></ol></section>
-<section><h2>営業時間・対応エリア</h2><table><tr><th>営業時間</th><td>〜20:00<span class="todo">（ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>宇部市・山口市を中心に（Instagramの記載）</td></tr></table>
-</section>
-<section><h2>会社概要</h2><table><tr><th>屋号</th><td>恵インテリア</td></tr><tr><th>所在地</th><td>〒754-0894 山口県山口市佐山4317-1</td></tr><tr><th>電話</th><td>080-6346-9147</td></tr><tr><th>Instagram</th><td>@megumi_k2025</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table>
-</section>
+
+<section><h2>よくあるご相談</h2><ul class="list now"><li>壁紙（クロス）の張り替え（1部屋から）</li><li>壁紙の穴・キズ・はがれの補修</li><li>床の張り替え・クッションフロア・シート施工</li><li>退去時・入居前の原状回復<span class="todo">（ご確認ください）</span></li><li>お見積りはDM・お電話で写真を送るだけ</li></ul></section>
+<section><h2>ご来店・ご依頼の流れ</h2><ol class="flow"><li>DMまたはお電話で写真を送る</li><li>概算のご案内</li><li>現地確認・正式お見積り</li><li>施工（多くは1日）</li><li>お引き渡し</li></ol></section>
+<section><h2>お気軽にどうぞ</h2><div class="cards "><div class="card"><b>写真で概算</b><p>傷や部屋の写真をDMで送っていただければ、概算をお伝えします。</p></div><div class="card"><b>1か所でも</b><p>小さな補修も遠慮なくご相談ください。</p></div><div class="card"><b>夜20時まで相談OK</b><p>お仕事帰りでもご連絡いただけます。<span class="todo">（受付時間はご確認ください）</span></p></div></div></section>
+<section><h2>営業のご案内</h2><table><tr><th>営業時間</th><td>〜20:00<span class="todo">（ご確認ください）</span></td></tr><tr><th>対応エリア</th><td>宇部市・山口市を中心に（Instagramの記載）</td></tr></table></section>
+<section><h2>会社概要</h2><table><tr><th>屋号</th><td>恵インテリア</td></tr><tr><th>所在地</th><td>〒754-0894 山口県山口市佐山4317-1</td></tr><tr><th>電話</th><td>080-6346-9147</td></tr><tr><th>Instagram</th><td>@megumi_k2025</td></tr><tr><th>代表・創業</th><td><span class="todo">（ご確認ください）</span></td></tr></table></section>
 <section id="contact"><h2>この試作品について（制作者への連絡先）</h2>
 <p>「これで良い」「ここを直したい」「不要」のどれでも、下記にご一報ください。ご連絡がなければ9月30日に削除します。</p>
 <a class="tel" href="mailto:yuubisinesu@gmail.com?subject=%E8%A9%A6%E4%BD%9C%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E4%BB%B6" style="background:#2f3e46">メールで連絡する<small>yuubisinesu@gmail.com（Emport AI 田中）</small></a>
 <a class="tel" href="tel:080-2947-0736" style="background:#555;margin-top:10px">電話で連絡する<small>080-2947-0736（Emport AI 田中）</small></a>
 <p class="src">公開する場合は初期5万円（写真や文章の差し替え・公開込み）＋月5,000円（保守費）。Instagramの投稿をそのまま載せる形にもできます。</p></section>
-</main><footer><div class="wrap">このページは、恵インテリア様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミから読み取った印象をもとに作成した「案」で、恵インテリア様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
+</main><footer><div class="wrap">このページは、恵インテリア様にご覧いただくための試作品です。掲載内容は公開情報（Googleマップ・Instagramのプロフィール）と口コミをもとに作成した「案」で、恵インテリア様の承認を得たものではありません。不要な場合は削除します。<br>制作：Emport AI（山口県）田中悠清</div></footer>
 <div class="fixed"><a class="tel" href="tel:080-6346-9147">電話で相談する（080-6346-9147）</a></div></body></html>
